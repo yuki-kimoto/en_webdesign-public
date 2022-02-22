@@ -26,8 +26,7 @@
   });
 </script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-K8JHCY1V18"></script>
+<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-K8JHCY1V18"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -35,8 +34,8 @@
 
   gtag('config', 'G-K8JHCY1V18');
 </script>
-<title>サイドバーを作成する - フレックスレイアウト・スマートフォン対応 - HTML・CSS Writing 2021 - HTML・CSS Tutorial</title>
-<meta name="description" content="サイドバーをフレックスレイアウトを使って作ってみます。CSSの切り替えだけで、スマートフォン対応ができます。IE11でも確認済み。">
+<title> Create a sidebar-Flex layout for smartphones  - HTML・CSS Writing 2021 - HTML・CSS Tutorial</title>
+<meta name="description" content="Let's create a sidebar using  flex layout. You can support smartphones just by switching CSS. Confirmed in IE11.">
   </head>
   <body>
     <div class="container">
@@ -53,12 +52,11 @@
           <div class="entry">
   <div class="top">
     <!-- top -->
-
   </div>
   <div class="middle">
-    <h2><a href="/blog/20200124070617.html">サイドバーを作成する - フレックスレイアウト・スマートフォン対応</a></h2>
+    <h2><a href="/blog/20200124070617.html"> Create a sidebar-Flex layout for smartphones </a></h2>
 <p>
-  サイドバーを<a href="/blog/20200212090234.html">フレックスレイアウト</a>を使って作ってみます。CSSの切り替えだけで、スマートフォン対応ができます。IE11でも確認済み。
+  Let's create a sidebar using <a href="/blog/20200212090234.html"> flex layout</a>. You can support smartphones just by switching CSS. Confirmed in IE11.
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -76,107 +74,107 @@
 </div>
 
 
-<h3>サイドバー右、固定長、コンテンツ左、可変長、PC表示</h3>
+<h3> Sidebar right, fixed length, content left, variable length, PC display </h3>
 <p>
-  サイドバー右、固定長、コンテンツ左、可変長のPC表示です。フレックスレイアウトを使っています。コンテンツはcalcを使って、可変長の幅を計算しています。
+  Sidebar right, fixed length, content left, variable length PC display. I'm using a flex layout. The content uses calc to calculate the variable length width.
 </p>
-<div style="display:flex;">
-  <div style="width:calc(100% - 200px);background:pink;">
-    コンテンツ
+<div style = "display: flex;">
+  <div style = "width: calc (100%--200px); background: pink;">
+    content
   </div>
-  <div style="width:200px;background:green;">
-    サイドバー<br>
-    アイテム1<br>
-    アイテム2
+  <div style = "width: 200px; background: green;">
+    Sidebar <br>
+    Item 1 <br>
+    Item 2
   </div>
 </div>
 <pre>
-&lt;div style="display:flex;"&gt;
-  &lt;div style="width:calc(100% - 200px);background:pink;"&gt;
-    コンテンツ
+&lt;div style = "display: flex;"&gt;
+  &lt;div style = "width: calc (100%--200px); background: pink;"&gt;
+    content
   &lt;/div&gt;
-  &lt;div style="width:200px;background:green;"&gt;
-    サイドバー&lt;br&gt;
-    アイテム1&lt;br&gt;
-    アイテム2
+  &lt;div style = "width: 200px; background: green;"&gt;
+    Sidebar &lt;br&gt;
+    Item 1 &lt;br&gt;
+    Item 2
   &lt;/div&gt;
 &lt;/div&gt;
 </pre>
-<h3>サイドバー左、固定長、コンテンツ右、可変長、PC表示</h3>
+<h3> Sidebar left, fixed length, content right, variable length, PC display </h3>
 <p>
-  サイドバー左、固定長、コンテンツ右、可変長のPC表示です。「flex-direction:row-reverse;」を使うと、左右の順番を入れ替えることができます。サイドバーを左に置く場合もで、SEO対策とスマートフォン対応を考えて、コンテンツを最初に記述するようにします。
+  Sidebar left, fixed length, content right, variable length PC display. You can use "flex-direction: row-reverse;" to change the order of left and right. Even if you put the sidebar on the left, consider SEO measures and smartphone compatibility, and write the content first.
 </p>
-<div style="display:flex;flex-direction:row-reverse;">
-  <div style="width:calc(100% - 200px);background:pink;">
-    コンテンツ
+<div style = "display: flex; flex-direction: row-reverse;">
+  <div style = "width: calc (100%--200px); background: pink;">
+    content
   </div>
-  <div style="width:200px;background:green;">
-    サイドバー<br>
-    アイテム1<br>
-    アイテム2
+  <div style = "width: 200px; background: green;">
+    Sidebar <br>
+    Item 1 <br>
+    Item 2
   </div>
 </div>
 <pre>
-&lt;div style="display:flex;flex-direction:row-reverse;"&gt;
-  &lt;div style="width:calc(100% - 200px);background:pink;"&gt;
-    コンテンツ
+&lt;div style = "display: flex; flex-direction: row-reverse;"&gt;
+  &lt;div style = "width: calc (100%--200px); background: pink;"&gt;
+    content
   &lt;/div&gt;
-  &lt;div style="width:200px;background:green;"&gt;
-    サイドバー&lt;br&gt;
-    アイテム1&lt;br&gt;
-    アイテム2
+  &lt;div style = "width: 200px; background: green;"&gt;
+    Sidebar &lt;br&gt;
+    Item 1 &lt;br&gt;
+    Item 2
   &lt;/div&gt;
 &lt;/div&gt;
 </pre>
-<h3>サイドバー下、コンテンツ上、スマートフォン表示</h3>
+<h3> Under the sidebar, on the content, smartphone display </h3>
 <p>
-  サイドバー下、コンテンツ上、スマートフォン表示です。<a href="/blog/20200213070617.html">フレックスレイアウトで複数行表示</a>するので、「flex-wrap:wrap;」を追加して、サイドバーとコンテンツの幅を100%にします。
+  Below the sidebar, on the content, and on the smartphone. <a href="/blog/20200213070617.html"> Display multiple lines in flex layout</a>, so add "flex-wrap: wrap;" to make the sidebar and content 100%wide ..
 </p>
-<div style="display:flex;flex-wrap:wrap;">
-  <div style="width:100%;background:pink;">
-    コンテンツ
+<div style = "display: flex; flex-wrap: wrap;">
+  <div style = "width: 100%; background: pink;">
+    content
   </div>
-  <div style="width:100%;background:green;">
-    サイドバー<br>
-    アイテム1<br>
-    アイテム2
+  <div style = "width: 100%; background: green;">
+    Sidebar <br>
+    Item 1 <br>
+    Item 2
   </div>
 </div>
 <pre>
-&lt;div style="display:flex;flex-wrap:wrap;"&gt;
-  &lt;div style="width:100%;background:pink;"&gt;
-    コンテンツ
+&lt;div style = "display: flex; flex-wrap: wrap;"&gt;
+  &lt;div style = "width: 100%; background: pink;"&gt;
+    content
   &lt;/div&gt;
-  &lt;div style="width:100%;background:green;"&gt;
-    サイドバー&lt;br&gt;
-    アイテム1&lt;br&gt;
-    アイテム2
+  &lt;div style = "width: 100%; background: green;"&gt;
+    Sidebar &lt;br&gt;
+    Item 1 &lt;br&gt;
+    Item 2
   &lt;/div&gt;
 &lt;/div&gt;
 </pre>
-<h3>サイドバー非表示、コンテンツだけ、スマートフォン表示</h3>
+<h3> Sidebar hidden, content only, smartphone display </h3>
 <p>
-  サイドバー非表示、コンテンツだけ、スマートフォン表示です。サイドバーを「display:none;」で非表示にして、コンテンツの幅を100%にします。
+  The sidebar is hidden, only the content is displayed on the smartphone. Hide the sidebar with "display: none;" to make the content 100%wide.
 </p>
-<div style="display:flex;">
-  <div style="width:100%;background:pink;">
-    コンテンツ
+<div style = "display: flex;">
+  <div style = "width: 100%; background: pink;">
+    content
   </div>
-  <div style="display:none;background:green;">
-    サイドバー<br>
-    アイテム1<br>
-    アイテム2
+  <div style = "display: none; background: green;">
+    Sidebar <br>
+    Item 1 <br>
+    Item 2
   </div>
 </div>
 <pre>
-&lt;div style="display:flex;"&gt;
-  &lt;div style="width:100%;background:pink;"&gt;
-    コンテンツ
+&lt;div style = "display: flex;"&gt;
+  &lt;div style = "width: 100%; background: pink;"&gt;
+    content
   &lt;/div&gt;
-  &lt;div style="display:none;background:green;"&gt;
-    サイドバー&lt;br&gt;
-    アイテム1&lt;br&gt;
-    アイテム2
+  &lt;div style = "display: none; background: green;"&gt;
+    Sidebar &lt;br&gt;
+    Item 1 &lt;br&gt;
+    Item 2
   &lt;/div&gt;
 &lt;/div&gt;
 </pre>
@@ -206,8 +204,7 @@
           <div style="margin-bottom:30px">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
      crossorigin="anonymous"></script>
-<!-- ディスプレイ縦長 -->
-<ins class="adsbygoogle"
+<!-- ディスプレイ縦長 --><ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-4525414114581084"
      data-ad-slot="4544919209"

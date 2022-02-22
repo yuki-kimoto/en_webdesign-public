@@ -26,8 +26,7 @@
   });
 </script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-K8JHCY1V18"></script>
+<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-K8JHCY1V18"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -35,8 +34,8 @@
 
   gtag('config', 'G-K8JHCY1V18');
 </script>
-<title>box-sizing - ボーダー幅・パディングをブロックの幅・高さの内側に収める - CSS入門【CSS3対応】 - HTML・CSS Writing 2021 - HTML・CSS Tutorial</title>
-<meta name="description" content="box-sizingを使うと、ボーダー幅・パディングをブロックの幅・高さの内側に収めることができます。">
+<title> box-sizing --Border width / padding is stored inside the block width / height --Introduction to CSS [CSS3 compatible]  - HTML・CSS Writing 2021 - HTML・CSS Tutorial</title>
+<meta name="description" content="You can use  box-sizing  to fit the border width / padding inside the block width / height.">
   </head>
   <body>
     <div class="container">
@@ -53,31 +52,30 @@
           <div class="entry">
   <div class="top">
     <!-- top -->
-
   </div>
   <div class="middle">
-    <div class="bread">
-  <ul itemscope itemtype="http://schema.org/BreadcrumbList">
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <div class = "bread">
+  <ul itemscope itemtype = "http://schema.org/BreadcrumbList">
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/">
-        <span itemprop="name">Webデザイン</span>
-      </a>
-      <meta itemprop="position" content="1" />
+        <span itemprop = "name"> Web design </span>
+     </a>
+      <meta itemprop = "position" content = "1" />
     </li>
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/blog/20200427085612.html">
-        <span itemprop="name">CSS</span>
-      </a>
-      <meta itemprop="position" content="2" />
+        <span itemprop = "name"> CSS </span>
+     </a>
+      <meta itemprop = "position" content = "2" />
     </li>
     <li>
       here
     </li>
   </ul>
 </div>
-<h2><a href="/blog/20200414081654.html">box-sizing - ボーダー幅・パディングをブロックの幅・高さの内側に収める - CSS入門【CSS3対応】</a></h2>
+<h2><a href="/blog/20200414081654.html"> box-sizing --Border width / padding is stored inside the block width / height --Introduction to CSS [CSS3 compatible] </a></h2>
 <p>
-  <b>box-sizing</b>を使うと、ボーダー幅・パディングをブロックの幅・高さの内側に収めることができます。
+  You can use <b> box-sizing </b> to fit the border width / padding inside the block width / height.
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -96,39 +94,39 @@
 
 
 <style>
-  * {
-    box-sizing:content-box;
+  * {{
+    box-sizing: content-box;
   }
 </style>
 <pre>
-box-sizing:border-box;
+box-sizing: border-box;
 </pre>
 <p>
-  実際に違いを見てみましょう。「box-sizing:border-box;」を指定すると幅300pxの内側にボーダーとパディングが描画されるのに対して、指定がない場合は、幅300pxの外側にボーダーとパディングが描画されます。指定がある方が、はるかに直感的で、サイズ調整がしやすいですよね。
+  Let's actually see the difference. If "box-sizing: border-box;" is specified, the border and padding are drawn inside the width of 300px, while if not specified, the border and padding are drawn outside the width of 300px. It's much more intuitive and easier to adjust the size if you specify it.
 </p>
-<div style="width:300px;box-sizing:border-box;padding:30px;border:5px solid red">
-  「box-sizing: border-box;」指定あり
+<div style = "width: 300px; box-sizing: border-box; padding: 30px; border: 5px solid red">
+  "Box-sizing: border-box;" is specified
 </div>
 <p>
   <br>
 </p>
-<div style="width:300px;padding:30px;border:5px solid red">
-  「box-sizing: border-box;」指定なし
+<div style = "width: 300px; padding: 30px; border: 5px solid red">
+  "Box-sizing: border-box;" not specified
 </div>
 <pre>
-&lt;div style="width:300px;box-sizing:border-box;padding:30px;border:5px solid red"&gt;
-  「box-sizing: border-box;」指定あり
+&lt;div style = "width: 300px; box-sizing: border-box; padding: 30px; border: 5px solid red"&gt;
+  "Box-sizing: border-box;" is specified
 &lt;/div&gt;
 &lt;br&gt;
-&lt;div style="width:300px;padding:30px;border:5px solid red"&gt;
-  「box-sizing: border-box;」指定なし
+&lt;div style = "width: 300px; padding: 30px; border: 5px solid red"&gt;
+  "Box-sizing: border-box;" not specified
 &lt;/div&gt;
 </pre>
 <p>
-  「box-sizing:border-box;」を指定しておくほうが、サイズ調整がやりやすいので、<a href="/blog/20200125070617.html">スタイルシート(CSS)のデフォルトの設定</a>として、<a href="/blog/20200411134139.html">全称セレクタ</a>で指定しておきましょう。
+  It is easier to adjust the size by specifying "box-sizing: border-box;", so <a href="/blog/20200125070617.html"> Stylesheet (CSS) default settings</a> Let's specify it with <a href="/blog/20200411134139.html"> Categorical selector</a>.
 </p>
 <pre>
-* {
+* {{
   box-sizing: border-box;
 }
 </pre>
@@ -158,8 +156,7 @@ box-sizing:border-box;
           <div style="margin-bottom:30px">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
      crossorigin="anonymous"></script>
-<!-- ディスプレイ縦長 -->
-<ins class="adsbygoogle"
+<!-- ディスプレイ縦長 --><ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-4525414114581084"
      data-ad-slot="4544919209"

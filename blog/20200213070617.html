@@ -26,8 +26,7 @@
   });
 </script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-K8JHCY1V18"></script>
+<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-K8JHCY1V18"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -35,8 +34,8 @@
 
   gtag('config', 'G-K8JHCY1V18');
 </script>
-<title>複数行のフレックスレイアウトをマスターする - HTML・CSS Writing 2021 - HTML・CSS Tutorial</title>
-<meta name="description" content="複数行のフレックスレイアウトをマスターしましょう。複数行のフレックスレイアウトをマスターすると、たとえば、商品画像と商品タイトルを複数行に並べることができます。">
+<title> Master multi-line flex layout  - HTML・CSS Writing 2021 - HTML・CSS Tutorial</title>
+<meta name="description" content="Master multi-line flex layouts. Mastering a multi-line flex layout allows, for example, to arrange product images and product titles in multiple lines.">
   </head>
   <body>
     <div class="container">
@@ -53,12 +52,11 @@
           <div class="entry">
   <div class="top">
     <!-- top -->
-
   </div>
   <div class="middle">
-    <h2><a href="/blog/20200213070617.html">複数行のフレックスレイアウトをマスターする</a></h2>
+    <h2><a href="/blog/20200213070617.html"> Master multi-line flex layout </a></h2>
 <p>
-  複数行のフレックスレイアウトをマスターしましょう。複数行のフレックスレイアウトをマスターすると、たとえば、商品画像と商品タイトルを複数行に並べることができます。
+  Master multi-line flex layouts. Mastering a multi-line flex layout allows, for example, to arrange product images and product titles in multiple lines.
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -77,177 +75,177 @@
 
 
 <p>
-  <a href="/blog/20200212090234.html">フレックスレイアウト入門</a>の記事を読んでいることが前提です。
+  It is assumed that you have read the <a href="/blog/20200212090234.html"> Introduction to Flex Layout</a> article.
 </p>
-<h3>複数行のフレックスレイアウト</h3>
+<h3> Multi-line flex layout </h3>
 <p>
-  フレックスレイアウトは、複数行にすることができます。フレックスレイアウトを複数行にするには、まず最初に「display:flex」を指定した要素に「flex-wrap:wrap」を指定します。
+  The flex layout can be multi-line. To make the flex layout multiple lines, first specify "flex-wrap: wrap" for the element that specified "display: flex".
 </p>
-<div style="background:#fee;display:flex;flex-wrap:wrap">
-  <div style="background:red;">
-    焼肉<br>
+<div style = "background: #fee; display: flex; flex-wrap: wrap">
+  <div style = "background: red;">
+    Yakiniku <br>
     No. 1
   </div>
-  <div style="background:green;">
-    焼鳥
+  <div style = "background: green;">
+    Yakitori
   </div>
-  <div style="background:blue;">
-    サラダ
+  <div style = "background: blue;">
+    salad
   </div>
-  <div style="background:yellow;">
-    ラーメン
+  <div style = "background: yellow;">
+    ramen
   </div>
 </div>
 <pre>
-&lt;div style="background:#fee;display:flex;flex-wrap:wrap"&gt;
-  &lt;div style="background:red;"&gt;
-    焼肉&lt;br&gt;
+&lt;div style = "background: #fee; display: flex; flex-wrap: wrap"&gt;
+  &lt;div style = "background: red;"&gt;
+    Yakiniku &lt;br&gt;
     No. 1
   &lt;/div&gt;
-  &lt;div style="background:green;"&gt;
-    焼鳥
+  &lt;div style = "background: green;"&gt;
+    Yakitori
   &lt;/div&gt;
-  &lt;div style="background:blue;"&gt;
-    サラダ
+  &lt;div style = "background: blue;"&gt;
+    salad
   &lt;/div&gt;
-  &lt;div style="background:yellow;"&gt;
-    ラーメン
+  &lt;div style = "background: yellow;"&gt;
+    ramen
   &lt;/div&gt;
 &lt;/div&gt;
 </pre>
 <p>
-  CSSで「flex-wrap:wrap」を指定しても、これだけでは、複数行にはなりません。この後に、幅の指定をしていく必要があります。
+  Even if you specify "flex-wrap: wrap" in CSS, this alone will not result in multiple lines. After this, you need to specify the width.
 </p>
-<h3>均等幅で並べる</h3>
+<h3> Arrange with equal width </h3>
 <p>
-  「width:50%」を子要素に指定して、均等幅で並べてみましょう。
+  Let's specify "width: 50%" as a child element and arrange them evenly.
 </p>
-<div style="background:#fee;display:flex;flex-wrap:wrap">
-  <div style="background:red;width:50%;">
-    焼肉<br>
+<div style = "background: #fee; display: flex; flex-wrap: wrap">
+  <div style = "background: red; width: 50%;">
+    Yakiniku <br>
     No. 1
   </div>
-  <div style="background:green;width:50%;">
-    焼鳥
+  <div style = "background: green; width: 50%;">
+    Yakitori
   </div>
-  <div style="background:blue;width:50%;">
-    サラダ
+  <div style = "background: blue; width: 50%;">
+    salad
   </div>
-  <div style="background:yellow;width:50%;">
-    ラーメン
+  <div style = "background: yellow; width: 50%;">
+    ramen
   </div>
 </div>
 <pre>
-&lt;div style="background:#fee;display:flex;flex-wrap:wrap"&gt;
-  &lt;div style="background:red;width:50%;"&gt;
-    焼肉&lt;br&gt;
+&lt;div style = "background: #fee; display: flex; flex-wrap: wrap"&gt;
+  &lt;div style = "background: red; width: 50%;"&gt;
+    Yakiniku &lt;br&gt;
     No. 1
   &lt;/div&gt;
-  &lt;div style="background:green;width:50%;"&gt;
-    焼鳥
+  &lt;div style = "background: green; width: 50%;"&gt;
+    Yakitori
   &lt;/div&gt;
-  &lt;div style="background:blue;width:50%;"&gt;
-    サラダ
+  &lt;div style = "background: blue; width: 50%;"&gt;
+    salad
   &lt;/div&gt;
-  &lt;div style="background:yellow;width:50%;"&gt;
-    ラーメン
+  &lt;div style = "background: yellow; width: 50%;"&gt;
+    ramen
   &lt;/div&gt;
 &lt;/div&gt;
 </pre>
 <p>
-  おお、二行に並びましたね。この子要素の中に、商品画像と商品タイトルを入れたりできます。
+  Oh, you lined up in two lines. You can put a product image and a product title in this child element.
 </p>
-<h3>スマートフォン対応したヘッダーのレイアウト例</h3>
+<h3> Example of header layout for smartphones </h3>
 <p>
-  スマートフォン対応したヘッダーのレイアウトのサンプルを書いてみます。
+  Let's write a sample header layout for smartphones.
 </p>
 <p>
-  フレックスレイアウトを使って、CSSを切り替えるだけで、PCとスマートフォンのヘッダを切り替えられる構成です。
+  Using the flex layout, you can switch the header between your PC and smartphone simply by switching the CSS.
 </p>
-<h4>ヘッダーPC表示</h4>
+<h4> Header PC display </h4>
 <p>
-  フレックスレイアウトでの、ヘッダーPC表示です。サイトタイトル固定幅、メニュー一覧が均等幅です。
+  Header PC display in flex layout. The fixed width of the site title and the uniform width of the menu list.
 </p>
-<div style="background:#fee;display:flex;flex-wrap:wrap">
-  <div style="background:red;width:180px;">
-    Perlクラブ
+<div style = "background: #fee; display: flex; flex-wrap: wrap">
+  <div style = "background: red; width: 180px;">
+    Perl club
   </div>
-  <div style="background:green;display:none;">
-    メボ
+  <div style = "background: green; display: none;">
+    Mebo
   </div>
-  <ul style="width:calc(100% - 180px);display:flex;">
-    <li style="background:blue;width:33.3%;">
-      会社情報
+  <ul style = "width: calc (100%--180px); display: flex;">
+    <li style = "background: blue; width: 33.3%;">
+      About us
     </li>
-    <li style="background:yellow;width:33.3%;">
-      アクセス
+    <li style = "background: yellow; width: 33.3%;">
+      access
     </li>
-    <li style="background:pink;width:33.4%;">
-      問い合わせ
+    <li style = "background: pink; width: 33.4%;">
+      inquiry
     </li>
   </ul>
 </div>
 <pre>
-&lt;div style="background:#fee;display:flex;flex-wrap:wrap;"&gt;
-  &lt;div style="background:red;width:180px;"&gt;
-    Perlクラブ
+&lt;div style = "background: #fee; display: flex; flex-wrap: wrap;"&gt;
+  &lt;div style = "background: red; width: 180px;"&gt;
+    Perl club
   &lt;/div&gt;
-  &lt;div style="background:green;display:none;"&gt;
-    メボ
+  &lt;div style = "background: green; display: none;"&gt;
+    Mebo
   &lt;/div&gt;
-  &lt;ul style="width:calc(100% - 180px);display:flex;"&gt;
-    &lt;li style="background:blue;width:33.3%;"&gt;
-      会社情報
+  &lt;ul style = "width: calc (100%--180px); display: flex;"&gt;
+    &lt;li style = "background: blue; width: 33.3%;"&gt;
+      About us
     &lt;/li&gt;
-    &lt;li style="background:yellow;width:33.3%;"&gt;
-      アクセス
+    &lt;li style = "background: yellow; width: 33.3%;"&gt;
+      access
     &lt;/li&gt;
-    &lt;li style="background:pink;width:33.4%;"&gt;
-      問い合わせ
+    &lt;li style = "background: pink; width: 33.4%;"&gt;
+      inquiry
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </pre>
-<h4>ヘッダースマートフォン表示</h4>
+<h4> Header smartphone display </h4>
 <p>
-  フレックスレイアウトでの、ヘッダースマートフォン表示です。サイトタイトル可変、メニューボタン(メボ)固定幅、メニューが二段目以降です。メニューボタンで、切り替え表示可能なレイアウトです。
+  Header smartphone display in flex layout. The site title is variable, the menu button (mebo) has a fixed width, and the menu is from the second row onward. It is a layout that can be switched and displayed with the menu button.
 </p>
-<div style="background:#fee;display:flex;flex-wrap:wrap">
-  <div style="background:red;width:calc(100% - 40px);">
-    Perlクラブ
+<div style = "background: #fee; display: flex; flex-wrap: wrap">
+  <div style = "background: red; width: calc (100%-40px);">
+    Perl club
   </div>
-  <div style="background:green;width:40px;height:40px;">
-    メボ
+  <div style = "background: green; width: 40px; height: 40px;">
+    Mebo
   </div>
-  <ul style="width:100%;display:flex;flex-wrap:wrap;">
-    <li style="background:blue;width:100%;">
-      会社情報
+  <ul style = "width: 100%; display: flex; flex-wrap: wrap;">
+    <li style = "background: blue; width: 100%;">
+      About us
     </li>
-    <li style="background:yellow;width:100%;">
-      アクセス
+    <li style = "background: yellow; width: 100%;">
+      access
     </li>
-    <li style="background:pink;width:100%;">
-      問い合わせ
+    <li style = "background: pink; width: 100%;">
+      inquiry
     </li>
   </ul>
 </div>
 <pre>
-&lt;div style="background:#fee;display:flex;flex-wrap:wrap"&gt;
-  &lt;div style="background:red;width:calc(100% - 40px);"&gt;
-    Perlクラブ
+&lt;div style = "background: #fee; display: flex; flex-wrap: wrap"&gt;
+  &lt;div style = "background: red; width: calc (100%-40px);"&gt;
+    Perl club
   &lt;/div&gt;
-  &lt;div style="background:green;width:40px;height:40px;"&gt;
-    メボ
+  &lt;div style = "background: green; width: 40px; height: 40px;"&gt;
+    Mebo
   &lt;/div&gt;
-  &lt;ul style="width:100%;display:flex;flex-wrap:wrap;"&gt;
-    &lt;li style="background:blue;width:100%;"&gt;
-      会社情報
+  &lt;ul style = "width: 100%; display: flex; flex-wrap: wrap;"&gt;
+    &lt;li style = "background: blue; width: 100%;"&gt;
+      About us
     &lt;/li&gt;
-    &lt;li style="background:yellow;width:100%;"&gt;
-      アクセス
+    &lt;li style = "background: yellow; width: 100%;"&gt;
+      access
     &lt;/li&gt;
-    &lt;li style="background:pink;width:100%;"&gt;
-      問い合わせ
+    &lt;li style = "background: pink; width: 100%;"&gt;
+      inquiry
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
@@ -278,8 +276,7 @@
           <div style="margin-bottom:30px">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
      crossorigin="anonymous"></script>
-<!-- ディスプレイ縦長 -->
-<ins class="adsbygoogle"
+<!-- ディスプレイ縦長 --><ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-4525414114581084"
      data-ad-slot="4544919209"

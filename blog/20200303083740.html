@@ -26,8 +26,7 @@
   });
 </script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-K8JHCY1V18"></script>
+<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-K8JHCY1V18"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -35,8 +34,8 @@
 
   gtag('config', 'G-K8JHCY1V18');
 </script>
-<title>ヘッダーを固定した場合に、アンカーがずれるのを簡単なHTMLとCSSで修正する方法 - HTML・CSS Writing 2021 - HTML・CSS Tutorial</title>
-<meta name="description" content="ヘッダーを固定した場合に、アンカーがずれるのを簡単なCSSで修正する方法を紹介します。">
+<title> How to fix the anchor shift with simple HTML and CSS when the header is fixed  - HTML・CSS Writing 2021 - HTML・CSS Tutorial</title>
+<meta name="description" content="I will show you how to fix the anchor shift with simple CSS when the header is fixed.">
   </head>
   <body>
     <div class="container">
@@ -53,12 +52,11 @@
           <div class="entry">
   <div class="top">
     <!-- top -->
-
   </div>
   <div class="middle">
-    <h2><a href="/blog/20200303083740.html">ヘッダーを固定した場合に、アンカーがずれるのを簡単なHTMLとCSSで修正する方法</a></h2>
+    <h2><a href="/blog/20200303083740.html"> How to fix the anchor shift with simple HTML and CSS when the header is fixed </a></h2>
 <p>
-  ヘッダーを固定した場合に、アンカーがずれるのを簡単なCSSで修正する方法を紹介します。
+  I will show you how to fix the anchor shift with simple CSS when the header is fixed.
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -77,42 +75,42 @@
 
 
 <p>
-  アンカーとというのは「#」で始まるページ内リンクのことです。
+  Anchors are in-page links that start with "#".
 </p>
 <p>
-  <a href="#design">アンカーリンク</a>
-</p>
-<pre>
-&lt;a href="#design"&gt;アンカーリンク&lt;/a&gt;
-
-&lt;h3 id="design"&gt;アンカーリンクのとび先&lt;/h3&gt;
-</pre>
-<p>
-  ヘッダ固定デザインは、スマートフォンサイトを作成する場合に、ユーザー体験が改善されますので、PCサイトでも一般的に使われるようになりましたね。
-</p>
-<p>
-  この場合に、アンカーを使って、リンクを張った場合に、固定ヘッダの裏に、移動先の見出しが隠れてしまうという事象が発生します。上要素の下マージンと下要素の上マージンがマージされてしまう場合に、下要素の上マージンが0と判定されてしまうためです。
-</p>
-<h3>HTMLとCSSによる簡単な解決方法</h3>
-<p>
-  HTMLとCSSによる簡単な解決方法があります。それは、アンカーのとび先自体にidを設定するのではなくって、その手前に高さ1pxのブロック要素を作り、idを設定します。とび先自体には、十分な上マージンを設定しましょう。1pxであれば、デザイン的に、そんなに気にならないと思います。
+  <a href="#design"> anchor link</a>
 </p>
 <pre>
-&lt;a href="#design"&gt;アンカーリンク&lt;/a&gt;
+&lt;a href="#design"&gt; anchor link&lt;/a&gt;
 
-&lt;div id="design" style="height:1px"&gt;&lt;/div&gt;
-
-&lt;h3 style="margin-top:50px"&gt;アンカーリンクのとび先&lt;/h3&gt;
+&lt;h3 id = "design"&gt; Anchor link jump destination &lt;/h3&gt;
 </pre>
 <p>
-  このように書くことで、簡単に解決できます。
+  The fixed header design improves the user experience when creating smartphone sites, so it has become popular on PC sites as well.
 </p>
 <p>
-  一つの注意点として、高さ1pxのブロックが入ることで、上要素の下マージンと下要素の上マージンされず合計されるので、上にある要素の下マージンを、減らす必要があることでしょう。
+  In this case, if you use an anchor to create a link, the heading of the destination will be hidden behind the fixed header. This is because if the lower margin of the upper element and the upper margin of the lower element are merged, the upper margin of the lower element is determined to be 0.
 </p>
-<h3 id="design">アンカーリンクのとび先</h3>
+<h3> Easy solution with HTML and CSS </h3>
 <p>
-  ここがアンカーリンクのとび先です。
+  There is an easy solution with HTML and CSS. Instead of setting the id at the tip of the anchor itself, it creates a block element with a height of 1px in front of it and sets the id. Set a sufficient upper margin for the jump destination itself. If it is 1px, I don't think it will bother you so much in terms of design.
+</p>
+<pre>
+&lt;a href="#design"&gt; anchor link&lt;/a&gt;
+
+&lt;div id = "design" style = "height: 1px"&gt; &lt;/div&gt;
+
+&lt;h3 style = "margin-top: 50px"&gt; Anchor link jump destination &lt;/h3&gt;
+</pre>
+<p>
+  By writing like this, you can easily solve it.
+</p>
+<p>
+  One caveat is that by including a block with a height of 1px, the lower margin of the upper element and the upper margin of the lower element are not summed, so it will be necessary to reduce the lower margin of the upper element. ..
+</p>
+<h3 id = "design"> Anchor link jump destination </h3>
+<p>
+  This is where the anchor link jumps.
 </p>
 
   </div>
@@ -140,8 +138,7 @@
           <div style="margin-bottom:30px">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
      crossorigin="anonymous"></script>
-<!-- ディスプレイ縦長 -->
-<ins class="adsbygoogle"
+<!-- ディスプレイ縦長 --><ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-4525414114581084"
      data-ad-slot="4544919209"

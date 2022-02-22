@@ -26,8 +26,7 @@
   });
 </script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-K8JHCY1V18"></script>
+<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-K8JHCY1V18"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -35,8 +34,8 @@
 
   gtag('config', 'G-K8JHCY1V18');
 </script>
-<title>フォームの中でサブミットしないボタンを作成する - HTML・CSS Writing 2021 - HTML・CSS Tutorial</title>
-<meta name="description" content="フォームの中でサブミットしないボタンを作成する方法を解説します。">
+<title> Create a non-submit button in the form  - HTML・CSS Writing 2021 - HTML・CSS Tutorial</title>
+<meta name="description" content="I will explain how to create a button that does not submit in the form.">
   </head>
   <body>
     <div class="container">
@@ -53,12 +52,11 @@
           <div class="entry">
   <div class="top">
     <!-- top -->
-
   </div>
   <div class="middle">
-    <h2><a href="/blog/20200313095039.html">フォームの中でサブミットしないボタンを作成する</a></h2>
+    <h2><a href="/blog/20200313095039.html"> Create a non-submit button in the form </a></h2>
 <p>
-  フォームの中でサブミットしないボタンを作成する方法を解説します。
+  I will explain how to create a button that does not submit in the form.
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -77,111 +75,111 @@
 
 
 <p>
-  ブラウザのデフォルトの動作は、フォームの中に、サブミットボタンあるいは、ボタンがあると、フォームをサブミットしようとします。
+  The default behavior of the browser is to submit a form or if there is a button in the form, it will try to submit the form.
 </p>
 <form>
-  <input type="text">
-  <input type="submit" value="登録する">
+  <input type = "text">
+  <input type = "submit" value = "submit">
 </form>
 <form>
-  <input type="text">
-  <button>登録する</button>
+  <input type = "text">
+  <button> Register </button>
 </form>
 <pre>
 &lt;form&gt;
-  &lt;input type="text"&gt;
-  &lt;input type="submit" value="登録する"&gt;
+  &lt;input type = "text"&gt;
+  &lt;input type = "submit" value = "submit"&gt;
 &lt;/form&gt;
 
 &lt;form&gt;
-  &lt;input type="text"&gt;
-  &lt;button&gt;登録する&lt;/button&gt;
+  &lt;input type = "text"&gt;
+  &lt;button&gt; Register &lt;/button&gt;
 &lt;/form&gt;
 </pre>
 <p>
-  クリックしてみてください。ブラウザのデフォルトの動作であるサブミットが起こって、ページが更新されています。
+  Please click. The page is refreshing with a submit, which is the default behavior of the browser.
 </p>
-<h3>フォームの中でサブミットしないボタン</h3>
+<h3> Buttons that do not submit in the form </h3>
 <p>
-  現代的な<a href="https://en.webapp.perlzemi.com/">Webシステム開発</a>においては、データの更新は、ajaxを使ってJavaScriptを行いたいという要望があります。ページの遷移を起こさずに、データを更新したいためです。
+  In modern <a href="https://en.webapp.perlzemi.com/"> Web system development</a>, there is a request to update data using ajax. This is because I want to update the data without causing page transitions.
 </p>
 <p>
-  そのため、フォームの中でサブミットしないボタンが欲しいですね。実は「type=button」とすると、サブミットしないボタンになります。
+  Therefore, I want a button that does not submit in the form. Actually, if you set "type = button", it will be a button that does not submit.
 </p>
 <form>
-  <input type="text">
-  <button type="button">登録する</button>
+  <input type = "text">
+  <button type = "button"> Register </button>
 </form>
 <pre>
 &lt;form&gt;
-  &lt;input type="text"&gt;
-  &lt;button type="button"&gt;登録する&lt;/button&gt;
+  &lt;input type = "text"&gt;
+  &lt;button type = "button"&gt; Register &lt;/button&gt;
 &lt;/form&gt;
 </pre>
 <p>
-  クリックしてみてください。ページの遷移が起こりませんね。
+  Please click. Page transitions do not occur.
 </p>
-<h3>ajaxでフォームの内容を送信するサンプル</h3>
+<h3> Sample to submit form contents with ajax </h3>
 <p>
-  <a href="/blog/20200312095039.html">jQuery</a>とJavaScritpで、ajaxでフォームの内容を送信するサンプルを書いてみます。これは、実際には、サーバーサイド側の実装がないので、動かないことにご注意。取得したフォームの内容は、表示してみます。名前と年齢を入力して、登録ボタンを押してください。サーバー側の実装は、何も存在しないので、セキュリティエンジニアの皆さんも安心して、押してください。
+  Let's write a sample to submit the contents of the form with ajax with <a href="/blog/20200312095039.html"> jQuery</a> and JavaScritp. Note that this doesn't actually work as there is no server-side implementation. Let's display the contents of the obtained form. Please enter your name and age and press the register button. There is no server-side implementation, so security engineers can rest assured to push it.
 </p>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src = "https://code.jquery.com/jquery-3.4.1.min.js"> </script>
 <script>
-  $(document).on('click', '.myform .submit', function () {
-    var data = $(this).closest('form').serialize();
+  $(document) .on ('click','.myform .submit', function () {
+    var data = $(this) .closest ('form') .serialize ();
     
-    // 内容を見てみる
-    alert(data);
+    // Take a look at the contents
+    alert (data);
     
-    // ajaxでフォーム委の内容を送信
-    /*
-      $.post('/path', data, function () {
+    // Submit the contents of the form committee with ajax
+    / *
+      $.post ('/ path', data, function () {
         
       });
-    */
+    * / /
   });
 </script>
-<div class="myform">
+<div class = "myform">
   <form>
     <div>
-      名前: <input type="text" name="name">
+      Name: <input type = "text" name = "name">
     </div>
     <div>
-      年齢: <input type="text" name="age">
+      Age: <input type = "text" name = "age">
     </div>
     <div>
-      <button type="button" class="submit">登録する</button>
+      <button type = "button" class = "submit"> Register </button>
     </div>
   </form>
 </div>
 <pre>
-&lt;script src="https://code.jquery.com/jquery-3.4.1.min.js"&gt;&lt;/script&gt;
+&lt;script src = "https://code.jquery.com/jquery-3.4.1.min.js"&gt; &lt;/script&gt;
 &lt;script&gt;
-  $(document).on('click', '.myform .submit', function () {
-    var data = $(this).closest('form').serialize();
+  $(document) .on ('click','.myform .submit', function () {
+    var data = $(this) .closest ('form') .serialize ();
     
-    // 内容を見てみる
-    alert(data);
+    // Take a look at the contents
+    alert (data);
     
-    // ajaxでフォーム委の内容を送信
-    /*
-      $.post('/path', data, function () {
+    // Submit the contents of the form committee with ajax
+    / *
+      $.post ('/ path', data, function () {
         
       });
-    */
+    * / /
   });
 &lt;/script&gt;
 
-&lt;div class="myform"&gt;
+&lt;div class = "myform"&gt;
   &lt;form&gt;
     &lt;div&gt;
-      名前: &lt;input type="text" name="name"&gt;
+      Name: &lt;input type = "text" name = "name"&gt;
     &lt;/div&gt;
     &lt;div&gt;
-      年齢: &lt;input type="text" name="age"&gt;
+      Age: &lt;input type = "text" name = "age"&gt;
     &lt;/div&gt;
     &lt;div&gt;
-      &lt;button type="button" class="submit"&gt;登録する&lt;/button&gt;
+      &lt;button type = "button" class = "submit"&gt; Register &lt;/button&gt;
     &lt;/div&gt;
   &lt;/form&gt;
 &lt;/div&gt;
@@ -212,8 +210,7 @@
           <div style="margin-bottom:30px">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
      crossorigin="anonymous"></script>
-<!-- ディスプレイ縦長 -->
-<ins class="adsbygoogle"
+<!-- ディスプレイ縦長 --><ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-4525414114581084"
      data-ad-slot="4544919209"

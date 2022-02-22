@@ -26,8 +26,7 @@
   });
 </script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-K8JHCY1V18"></script>
+<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-K8JHCY1V18"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -35,8 +34,8 @@
 
   gtag('config', 'G-K8JHCY1V18');
 </script>
-<title>片側が固定長のメニューを作成する - HTML・CSS Writing 2021 - HTML・CSS Tutorial</title>
-<meta name="description" content="片側が固定長のメニューを作成する方法を解説します。HTML5とCSS3では、ウィンドウ幅を計算で求めることができるようになったので、これを利用します。メニューは、固定長のサイドバーの中にulタグを使って、表現します。">
+<title> Create a menu with a fixed length on one side  - HTML・CSS Writing 2021 - HTML・CSS Tutorial</title>
+<meta name="description" content="Learn how to create a fixed-length menu on one side. In HTML5 and CSS3, it is now possible to calculate the window width, so we will use this. Menus are represented using the ul tag in a fixed-length sidebar.">
   </head>
   <body>
     <div class="container">
@@ -53,12 +52,11 @@
           <div class="entry">
   <div class="top">
     <!-- top -->
-
   </div>
   <div class="middle">
-    <h2><a href="/blog/20200211101652.html">片側が固定長のメニューを作成する</a></h2>
+    <h2><a href="/blog/20200211101652.html"> Create a menu with a fixed length on one side </a></h2>
 <p>
-  片側が固定長のメニューを作成する方法を解説します。HTML5とCSS3では、ウィンドウ幅を計算で求めることができるようになったので、これを利用します。メニューは、固定長のサイドバーの中にulタグを使って、表現します。
+  Learn how to create a fixed-length menu on one side. In HTML5 and CSS3, it is now possible to calculate the window width, so we will use this. Menus are represented using the ul tag in a fixed-length sidebar.
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -76,123 +74,123 @@
 </div>
 
 
-<h3>片側が固定長のメニューの作成</h3>
+<h3> Creating a menu with a fixed length on one side </h3>
 <p>
-  片側が固定長のメニューを作成してみましょう。メニューの幅は、200pxの固定長で右側に配置しています。左側のコンテンツは、自動的に伸長します。SEO対策も含めて考えた場合を考慮して、コンテンツを先に記述し、その後ろにメニューを記述するようにします。
+  Let's create a menu with a fixed length on one side. The width of the menu is fixed at 200px and is placed on the right side. The content on the left will grow automatically. In consideration of the case of considering SEO measures, write the content first and write the menu after that.
 </p>
 <p>
-  calcを使って、ウインドウ幅を計算しているのがポイントです。「display:flex」を使うと、クリアーフィックスなどのテクニックを使わないのでよいので楽です。IE11でも正しく描画されます。
+  The point is to calculate the window width using calc. Using "display: flex" is easy because you don't have to use techniques such as clear fix. It is drawn correctly in IE11.
 </p>
 <style>
   .sidefix_menu {
-    display:flex;
+    display: flex;
   }
   .sidefix_menu ul {
-    width:200px;
-    background:#afa
+    width: 200px;
+    background: #afa
   }
   .sidefix_menu_main {
-    width:calc(100% - 200px);
-    background:#faf;
+    width: calc (100%--200px);
+    background: #faf;
   }
 </style>
-<div class="sidefix_menu">
-  <div class="sidefix_menu_main">
-    コンテンツ
+<div class = "sidefix_menu">
+  <div class = "sidefix_menu_main">
+    content
   </div>
   <ul>
-    <li>カレー</li>
-    <li>りんご</li>
-    <li>焼肉</li>
+    <li> Curry </li>
+    <li> apples </li>
+    <li> Yakiniku </li>
   </ul>
 </div>
 <p>
-  片側を固定長のメニューにするサンプルです。
+  This is a sample that makes one side a fixed length menu.
 </p>
 <pre>
 &lt;style&gt;
   .sidefix_menu {
-    display:flex;
+    display: flex;
   }
   .sidefix_menu ul {
-    width:200px;
-    background:#afa
+    width: 200px;
+    background: #afa
   }
   .sidefix_menu_main {
-    width:calc(100% - 200px);
-    background:#faf;
+    width: calc (100%--200px);
+    background: #faf;
   }
 &lt;/style&gt;
 
-&lt;div class="sidefix_menu"&gt;
-  &lt;div class="sidefix_menu_main"&gt;
-    コンテンツ
+&lt;div class = "sidefix_menu"&gt;
+  &lt;div class = "sidefix_menu_main"&gt;
+    content
   &lt;/div&gt;
   &lt;ul&gt;
-    &lt;li&gt;カレー&lt;/li&gt;
-    &lt;li&gt;りんご&lt;/li&gt;
-    &lt;li&gt;焼肉&lt;/li&gt;
+    &lt;li&gt; Curry &lt;/li&gt;
+    &lt;li&gt; apples &lt;/li&gt;
+    &lt;li&gt; Yakiniku &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </pre>
-<h3>メニューの左右を入れ替えるには、どうすればよいですか?</h3>
+<h3> How can I swap the left and right sides of the menu? </H3>
 <p>
-  メニューの左右を入れ替えるには「display:flex」を指定した部分の下に「flex-flow: row-reverse;」を指定するだけです。
+  To switch the left and right of the menu, just specify "flex-flow: row-reverse;" under the part where "display: flex" is specified.
 </p>
 <p>
-  SEO対策も含めて考えた場合を考慮して、メニューが左側に来る場合も、コンテンツを先に記述し、その後ろにメニューを記述するようにします。メニューよりも、そのページのコンテンツが、SEO対策にとってはるかに重要だからです。
+  Considering the case where SEO measures are also considered, even if the menu comes to the left side, write the content first and write the menu after that. The content of the page is far more important for SEO than the menu.
 </p>
 <style>
   .sidefix_menu_reverse {
-    display:flex;
-    flex-flow:row-reverse;
+    display: flex;
+    flex-flow: row-reverse;
   }
   .sidefix_menu_reverse ul {
-    width:200px;
-    background:#afa
+    width: 200px;
+    background: #afa
   }
   .sidefix_menu__reverse_main {
-    width:calc(100% - 200px);
-    background:#faf;
+    width: calc (100%--200px);
+    background: #faf;
   }
 </style>
 <p>
-  メニューの左右を入れ替えるサンプルです。
+  This is a sample that swaps the left and right of the menu.
 </p>
-<div class="sidefix_menu_reverse">
-  <div class="sidefix_menu__reverse_main">
-    コンテンツ
+<div class = "sidefix_menu_reverse">
+  <div class = "sidefix_menu__reverse_main">
+    content
   </div>
   <ul>
-    <li>カレー</li>
-    <li>りんご</li>
-    <li>焼肉</li>
+    <li> Curry </li>
+    <li> apples </li>
+    <li> Yakiniku </li>
   </ul>
 </div>
 <pre>
 &lt;style&gt;
   .sidefix_menu_reverse {
-    display:flex;
-    flex-flow:row-reverse;
+    display: flex;
+    flex-flow: row-reverse;
   }
   .sidefix_menu_reverse ul {
-    width:200px;
-    background:#afa
+    width: 200px;
+    background: #afa
   }
   .sidefix_menu__reverse_main {
-    width:calc(100% - 200px);
-    background:#faf;
+    width: calc (100%--200px);
+    background: #faf;
   }
 &lt;/style&gt;
 
-&lt;div class="sidefix_menu_reverse"&gt;
-  &lt;div class="sidefix_menu__reverse_main"&gt;
-    コンテンツ
+&lt;div class = "sidefix_menu_reverse"&gt;
+  &lt;div class = "sidefix_menu__reverse_main"&gt;
+    content
   &lt;/div&gt;
   &lt;ul&gt;
-    &lt;li&gt;カレー&lt;/li&gt;
-    &lt;li&gt;りんご&lt;/li&gt;
-    &lt;li&gt;焼肉&lt;/li&gt;
+    &lt;li&gt; Curry &lt;/li&gt;
+    &lt;li&gt; apples &lt;/li&gt;
+    &lt;li&gt; Yakiniku &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 </pre>
@@ -222,8 +220,7 @@
           <div style="margin-bottom:30px">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
      crossorigin="anonymous"></script>
-<!-- ディスプレイ縦長 -->
-<ins class="adsbygoogle"
+<!-- ディスプレイ縦長 --><ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-4525414114581084"
      data-ad-slot="4544919209"

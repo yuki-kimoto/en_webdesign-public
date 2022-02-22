@@ -26,8 +26,7 @@
   });
 </script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-K8JHCY1V18"></script>
+<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-K8JHCY1V18"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -35,8 +34,8 @@
 
   gtag('config', 'G-K8JHCY1V18');
 </script>
-<title>クラスセレクタ - CSS入門【CSS3対応】 - HTML・CSS Writing 2021 - HTML・CSS Tutorial</title>
-<meta name="description" content="クラスセレクタは、スタイルシート(CSS)を適用する要素のクラスを指定するためのものです。">
+<title> Class Selector-Introduction to CSS [CSS3 compatible]  - HTML・CSS Writing 2021 - HTML・CSS Tutorial</title>
+<meta name="description" content="The  class selector  is for specifying the class of the element to which the style sheet (CSS) applies.">
   </head>
   <body>
     <div class="container">
@@ -53,37 +52,36 @@
           <div class="entry">
   <div class="top">
     <!-- top -->
-
   </div>
   <div class="middle">
-    <div class="bread">
-  <ul itemscope itemtype="http://schema.org/BreadcrumbList">
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <div class = "bread">
+  <ul itemscope itemtype = "http://schema.org/BreadcrumbList">
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/">
-        <span itemprop="name">Webデザイン</span>
-      </a>
-      <meta itemprop="position" content="1" />
+        <span itemprop = "name"> Web design </span>
+     </a>
+      <meta itemprop = "position" content = "1" />
     </li>
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/blog/20200427085612.html">
-        <span itemprop="name">CSS</span>
-      </a>
-      <meta itemprop="position" content="2" />
+        <span itemprop = "name"> CSS </span>
+     </a>
+      <meta itemprop = "position" content = "2" />
     </li>
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/blog/20200426085612.html">
-        <span itemprop="name">セレクタ</span>
-      </a>
-      <meta itemprop="position" content="3" />
+        <span itemprop = "name"> selector </span>
+     </a>
+      <meta itemprop = "position" content = "3" />
     </li>
     <li>
       here
     </li>
   </ul>
 </div>
-<h2><a href="/blog/20200422134429.html">クラスセレクタ - CSS入門【CSS3対応】</a></h2>
+<h2><a href="/blog/20200422134429.html"> Class Selector-Introduction to CSS [CSS3 compatible] </a></h2>
 <p>
-  <b>クラスセレクタ</b>は、スタイルシート(CSS)を適用する要素のクラスを指定するためのものです。
+  The <b> class selector </b> is for specifying the class of the element to which the style sheet (CSS) applies.
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -102,64 +100,64 @@
 
 
 <p>
-  クラスセレクタは「.」で始め、適用したい要素のクラス名を指定します。「.menu」の部分がクラスセレクタです。
+  The class selector starts with "." And specifies the class name of the element you want to apply. The ".menu" part is the class selector.
 </p>
 <pre>
 .menu {
-  color:red;
+  color: red;
 }
 </pre>
 <p>
-  クラスセレクタを使ってみましょう。
+  Let's use the class selector.
 </p>
 <style>
   .menu {
-    color:red;
+    color: red;
   }
 </style>
-<div class="menu">
-  焼肉
+<div class = "menu">
+  Grilled meat
 </div>
 <pre>
 &lt;style&gt;
 .menu {
-  color:red;
+  color: red;
 }
 &lt;/style&gt;
 
-&lt;div class="menu"&gt;
-  焼肉
+&lt;div class = "menu"&gt;
+  Grilled meat
 &lt;/div&gt;
 </pre>
-<h3>クラスセレクタと要素セレクタの組み合わせ</h3>
+<h3> Combination of class selector and element selector </h3>
 <p>
-  クラスセレクタと<a href="/blog/20200421134429.html">要素セレクタ</a>を組み合わせることもできます。
+  You can also combine a class selector with a <a href="/blog/20200421134429.html"> element selector</a>.
 </p>
 <style>
   div.menu {
-    color:red;
+    color: red;
   }
 </style>
-<div class="menu">
-  焼肉
+<div class = "menu">
+  Grilled meat
 </div>
 <pre>
 &lt;style&gt;
   div.menu {
-    color:red;
+    color: red;
   }
 &lt;/style&gt;
 
-&lt;div class="menu"&gt;
-  焼肉
+&lt;div class = "menu"&gt;
+  Grilled meat
 &lt;/div&gt;
 </pre>
-<h3>クラスセレクタとIDセレクタのどちらを使うべきですか?</h3>
+<h3> Should I use a class selector or an ID selector? </h3>
 <p>
-  基本的には、スタイルシート(CSS)の中では、クラスセレクタのみを使うのが、お勧めです。
+  Basically, it's best to use only class selectors in stylesheets (CSS).
 </p>
 <p>
-  <a href="/blog/20200423134429.html">IDセレクタ</a>は、要素が一意である必要があるのに対し、クラスセレクタは、同じクラス名を持つ複数の要素に対しても適用でき、柔軟です。
+  The <a href="/blog/20200423134429.html"> ID selector</a> requires the element to be unique, while the class selector applies to multiple elements with the same class name. It's possible and flexible.
 </p>
 
   </div>
@@ -187,8 +185,7 @@
           <div style="margin-bottom:30px">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
      crossorigin="anonymous"></script>
-<!-- ディスプレイ縦長 -->
-<ins class="adsbygoogle"
+<!-- ディスプレイ縦長 --><ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-4525414114581084"
      data-ad-slot="4544919209"

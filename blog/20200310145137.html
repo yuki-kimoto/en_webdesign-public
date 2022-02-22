@@ -26,8 +26,7 @@
   });
 </script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-K8JHCY1V18"></script>
+<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-K8JHCY1V18"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -35,8 +34,8 @@
 
   gtag('config', 'G-K8JHCY1V18');
 </script>
-<title>jQueryでテキストフィールドの変更検知 - インクリメンタルサーチの基礎 - HTML・CSS Writing 2021 - HTML・CSS Tutorial</title>
-<meta name="description" content="jQueryでテキストフィールドの変更を検知する方法です。インクリメンタルサーチを実装する場合に、基礎となる知識です。">
+<title> Text field change detection with jQuery --Basics of Incremental Search  - HTML・CSS Writing 2021 - HTML・CSS Tutorial</title>
+<meta name="description" content="How to detect changes in text fields with jQuery. This is the basic knowledge when implementing incremental search.">
   </head>
   <body>
     <div class="container">
@@ -53,12 +52,11 @@
           <div class="entry">
   <div class="top">
     <!-- top -->
-
   </div>
   <div class="middle">
-    <h2><a href="/blog/20200310145137.html">jQueryでテキストフィールドの変更検知 - インクリメンタルサーチの基礎</a></h2>
+    <h2><a href="/blog/20200310145137.html"> Text field change detection with jQuery --Basics of Incremental Search </a></h2>
 <p>
-  jQueryでテキストフィールドの変更を検知する方法です。インクリメンタルサーチを実装する場合に、基礎となる知識です。
+  How to detect changes in text fields with jQuery. This is the basic knowledge when implementing incremental search.
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -77,124 +75,124 @@
 
 
 <p>
-  inputイベントを使うと、テキストが変更されたことを検知できます。
+  You can use the input event to detect that the text has changed.
 </p>
-<h3>jQueryでテキストフィールドの変更を検知するサンプル</h3>
+<h3> Sample to detect text field changes with jQuery </h3>
 <p>
-  jQueryでテキストフィールドの変更を検知するサンプルです。テキストフィールドに入力すると「テキストフィールドが変更されました」と表示されます。
+  This is a sample that detects changes in text fields with jQuery. When I type in the text field, "The text field has changed" is displayed.
 </p>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src = "https://code.jquery.com/jquery-3.4.1.min.js"> </script>
 <script>
   $(function () {
-    /* キーの入力を検知 */
-    $(document).on('input', '[name=foo]', function () {
-      var foo_text = $('[name=foo]').val();
-      $('.changed_text').text('変更検知:' + foo_text);
+    / * Detects key input * /
+    $(document) .on ('input','[name = foo]', function () {
+      var foo_text = $('[name = foo]'). val ();
+      $('.changed_text'). text ('Change detection:' + foo_text);
     });
   });
 </script>
-<div class="changed_text">
-  変更検知:
+<div class = "changed_text">
+  Change detection:
 </div>
 <p>
-  <input type="text" name="foo">
+  <input type = "text" name = "foo">
 </p>
 <pre>
-&lt;script src="https://code.jquery.com/jquery-3.4.1.min.js"&gt;&lt;/script&gt;
+&lt;script src = "https://code.jquery.com/jquery-3.4.1.min.js"&gt; &lt;/script&gt;
 &lt;script&gt;
   $(function () {
-    /* キーの入力を検知 */
-    $(document).on('input', '[name=foo]', function () {
-      var foo_text = $('[name=foo]').val();
-      $('.changed_text').text('変更検知:' + foo_text);
+    / * Detects key input * /
+    $(document) .on ('input','[name = foo]', function () {
+      var foo_text = $('[name = foo]'). val ();
+      $('.changed_text'). text ('Change detection:' + foo_text);
     });
   });
 &lt;/script&gt;
 
-&lt;div class="changed_text"&gt;
-  変更検知:
+&lt;div class = "changed_text"&gt;
+  Change detection:
 &lt;/div&gt;
 
-&lt;input type="text" name="foo"&gt;
+&lt;input type = "text" name = "foo"&gt;
 </pre>
-<h3>テキストフィールドの変更で、次の文字が入力されている場合は待つ</h3>
+<h3> Wait if the next character is entered by changing the text field </h3>
 <p>
-  上記の方法は、入力されたときに、全てのinputイベントを拾ってしまいます。
+  The above method will pick up all input events as they are typed.
 </p>
 <p>
-  たとえば「木本」と打つと「ｋ」「き」「きｍ」「きも」「きもｔ」「きもと」「木本」と7回もイベントが、発生してしまいます。
+  For example, if you type "Kimoto", the event will occur 7 times, such as "k", "ki", "kim", "kimo", "kimo t", "kimoto", and "kimoto".
 </p>
 <p>
-  インクリメンタルサーチをするときに、たくさんのリクエストが送信されると、嫌ですね。
+  I don't like the fact that many requests are sent when doing an incremental search.
 </p>
 <p>
-  どうすれば、少ない回数のリクエストが送信できるでしょうか。
+  How can I send a small number of requests?
 </p>
 <p>
-  次のアルゴリズムを使います。
+  Use the following algorithm.
 </p>
 <p>
-  1秒待って、次の入力が行われていなければ、検知する。次の入力が行われていないとは、文字の変更がないことをいいます。
+  Wait 1 second and detect if the next input has not been made. If the following is not entered, it means that the characters have not changed.
 </p>
 <p>
-  setTimeout関数と、クロージャー変数に以前の値を保存するために、クロージャーを使って、実装します。
+  Implement using the setTimeout function and closures to store previous values ​​in closure variables.
 </p>
 <script>
   $(function () {
-    /* キーの入力を検知 */
-    $(document).on('input', '[name=foo_wait]', function () {
-      /* テキストフィールドの今の値をクロージャー変数に保存 */
-      var save_one_second_before_wait_text = $('[name=foo_wait]').val();
+    / * Detects key input * /
+    $(document) .on ('input','[name = foo_wait]', function () {
+      / * Save the current value of the text field in a closure variable * /
+      var save_one_second_before_wait_text = $('[name = foo_wait]'). val ();
       
-      /* クロージャーを実行 */
+      / * Run Closure * /
       var closure = function () {
-        setTimeout(function () {
-          var foo_wait_text = $('[name=foo_wait]').val();
-          /* 以前の値と異なっていた場合に処理を実行 */
+        setTimeout (function () {
+          var foo_wait_text = $('[name = foo_wait]'). val ();
+          / * Execute processing if it is different from the previous value * /
           if (save_one_second_before_wait_text === foo_wait_text) {
-            $('.changed_text_wait').text('変更検知:' + foo_wait_text);
+            $('.changed_text_wait'). text ('Change detection:' + foo_wait_text);
           }
         }, 1000);
-      };
-      closure();
+      };;
+      closure ();
     });
   });
 </script>
-<div class="changed_text_wait">
-  変更検知:
+<div class = "changed_text_wait">
+  Change detection:
 </div>
 <p>
-  <input type="text" name="foo_wait">
+  <input type = "text" name = "foo_wait">
 </p>
 <pre>
-&lt;script src="https://code.jquery.com/jquery-3.4.1.min.js"&gt;&lt;/script&gt;
+&lt;script src = "https://code.jquery.com/jquery-3.4.1.min.js"&gt; &lt;/script&gt;
 &lt;script&gt;
   $(function () {
-    /* キーの入力を検知 */
-    $(document).on('input', '[name=foo_wait]', function () {
-      /* テキストフィールドの今の値をクロージャー変数に保存 */
-      var save_one_second_before_wait_text = $('[name=foo_wait]').val();
+    / * Detects key input * /
+    $(document) .on ('input','[name = foo_wait]', function () {
+      / * Save the current value of the text field in a closure variable * /
+      var save_one_second_before_wait_text = $('[name = foo_wait]'). val ();
       
-      /* クロージャーを実行 */
+      / * Run Closure * /
       var closure = function () {
-        setTimeout(function () {
-          var foo_wait_text = $('[name=foo_wait]').val();
-          /* 以前の値と異なっていた場合に処理を実行 */
+        setTimeout (function () {
+          var foo_wait_text = $('[name = foo_wait]'). val ();
+          / * Execute processing if it is different from the previous value * /
           if (save_one_second_before_wait_text === foo_wait_text) {
-            $('.changed_text_wait').text('変更検知:' + foo_wait_text);
+            $('.changed_text_wait'). text ('Change detection:' + foo_wait_text);
           }
         }, 1000);
-      };
-      closure();
+      };;
+      closure ();
     });
   });
 &lt;/script&gt;
 
-&lt;div class="changed_text_wait"&gt;
-  変更検知:
+&lt;div class = "changed_text_wait"&gt;
+  Change detection:
 &lt;/div&gt;
 
-&lt;input type="text" name="foo_wait"&gt;
+&lt;input type = "text" name = "foo_wait"&gt;
 </pre>
 
   </div>
@@ -222,8 +220,7 @@
           <div style="margin-bottom:30px">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
      crossorigin="anonymous"></script>
-<!-- ディスプレイ縦長 -->
-<ins class="adsbygoogle"
+<!-- ディスプレイ縦長 --><ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-4525414114581084"
      data-ad-slot="4544919209"

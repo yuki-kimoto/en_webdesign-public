@@ -26,8 +26,7 @@
   });
 </script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-K8JHCY1V18"></script>
+<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-K8JHCY1V18"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -35,8 +34,8 @@
 
   gtag('config', 'G-K8JHCY1V18');
 </script>
-<title>テーブルの作成方法をマスターする - HTML・CSS Writing 2021 - HTML・CSS Tutorial</title>
-<meta name="description" content="テーブルを作成するにはtableタグ、trタグ、tdタグを使用します。">
+<title> Master how to create a table  - HTML・CSS Writing 2021 - HTML・CSS Tutorial</title>
+<meta name="description" content="To create a table  table tag,  tr tag,  td tag.">
   </head>
   <body>
     <div class="container">
@@ -53,12 +52,11 @@
           <div class="entry">
   <div class="top">
     <!-- top -->
-
   </div>
   <div class="middle">
-    <h2><a href="/blog/20200324095249.html">テーブルの作成方法をマスターする</a></h2>
+    <h2><a href="/blog/20200324095249.html"> Master how to create a table </a></h2>
 <p>
-  テーブルを作成するには<a href="/blog/20200321181042.html">tableタグ</a>、<a href="/blog/20200315094150.html">trタグ</a>、<a href="/blog/20200314094150.html">tdタグ</a>を使用します。
+  To create a table <a href="/blog/20200321181042.html"> table tag</a>, <a href="/blog/20200315094150.html"> tr tag</a>, <a href= Use the "/blog/20200314094150.html"> td tag</a>.
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -78,389 +76,389 @@
 
 <table>
   <tr>
-    <td>1行1列</td><td>1行2列</td><td>1行3列</td>
+    <td> 1 row 1 column </td> <td> 1 row 2 columns </td> <td> 1 row 3 columns </td>
   </tr>
   <tr>
-    <td>2行1列</td><td>2行2列</td><td>2行3列</td>
+    <td> 2 rows and 1 column </td> <td> 2 rows and 2 columns </td> <td> 2 rows and 3 columns </td>
   </tr>
 </table>
 <pre>
 &lt;table&gt;
   &lt;tr&gt;
-    &lt;td&gt;1行1列&lt;/td&gt;1行2列&lt;td&gt;&lt;td&gt;1行3列&lt;/td&gt;
+    &lt;td&gt; 1 row 1 column &lt;/td&gt; 1 row 2 columns &lt;td&gt; &lt;td&gt; 1 row 3 columns &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;td&gt;2行1列&lt;/td&gt;2行2列&lt;td&gt;&lt;td&gt;2行3列&lt;/td&gt;
+    &lt;td&gt; 2 rows 1 column &lt;/td&gt; 2 rows 2 columns &lt;td&gt; &lt;td&gt; 2 rows 3 columns &lt;/td&gt;
   &lt;/tr&gt;
 &lt;/table&gt;
 </pre>
 <p>
-  tableタグの下に列を表現するtrタグを配置します。trタグの下に行を表現するtdタグを配置します。
+  Place the tr tag that represents the column under the table tag. Place the td tag that represents the line under the tr tag.
 </p>
-<h3>テーブルの項目に枠をつける</h3>
+<h3> Add a frame to table items </h3>
 <p>
-  テーブルの項目に枠をつけてみましょう。テーブルの項目に枠をつけるには、tdタグのスタイルシート(CSS)でborderを指定します。
+  Let's add a frame to the items in the table. To add a border to a table item, specify border in the stylesheet (CSS) of the td tag.
 </p>
 <style>
   .waku td {
-    border:1px solid #ddd;
+    border: 1px solid #ddd;
   }
 </style>
-<div class="waku">
+<div class = "waku">
   <table>
     <tr>
-      <td>1行1列</td><td>1行2列</td><td>1行3列</td>
+      <td> 1 row 1 column </td> <td> 1 row 2 columns </td> <td> 1 row 3 columns </td>
     </tr>
     <tr>
-      <td>2行1列</td><td>2行2列</td><td>2行3列</td>
+      <td> 2 rows and 1 column </td> <td> 2 rows and 2 columns </td> <td> 2 rows and 3 columns </td>
     </tr>
   </table>
 </div>
 <pre>
 &lt;style&gt;
   .waku td {
-    border:1px solid #ddd;
+    border: 1px solid #ddd;
   }
 &lt;/style&gt;
 
-&lt;div class="waku"&gt;
+&lt;div class = "waku"&gt;
   &lt;table&gt;
     &lt;tr&gt;
-      &lt;td&gt;1行1列&lt;/td&gt;&lt;td&gt;1行2列&lt;/td&gt;&lt;td&gt;1行3列&lt;/td&gt;
+      &lt;td&gt; 1 row 1 column &lt;/td&gt; &lt;td&gt; 1 row 2 columns &lt;/td&gt; &lt;td&gt; 1 row 3 columns &lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;2行1列&lt;/td&gt;&lt;td&gt;2行2列&lt;/td&gt;&lt;td&gt;2行3列&lt;/td&gt;
+      &lt;td&gt; 2 rows and 1 column &lt;/td&gt; &lt;td&gt; 2 rows and 2 columns &lt;/td&gt; &lt;td&gt; 2 rows and 3 columns &lt;/td&gt;
     &lt;/tr&gt;
   &lt;/table&gt;
 &lt;/div&gt;
 </pre>
 <p>
-  あれ、ボーダーが、離れていますね。ちょっと、テーブルっぽくないですね。
+  Well, the borders are far apart. It's not like a table.
 </p>
-<h3>テーブルの枠が離れているのを結合する</h3>
+<h3> Join the separated table borders </h3>
 <p>
-  テーブルの枠が離れているのを結合してみましょう。tableタグのスタイルシート(CSS)に「border-collapse:collapse;」を指定します。
+  Let's join the table borders apart. Specify "border-collapse: collapse;" in the style sheet (CSS) of the table tag.
 </p>
 <style>
   .waku_collapse table {
-    border-collapse:collapse;
+    border-collapse: collapse;
   }
   .waku_collapse td {
-    border:1px solid #ddd;
+    border: 1px solid #ddd;
   }
 </style>
-<div class="waku_collapse">
+<div class = "waku_collapse">
   <table>
     <tr>
-      <td>1行1列</td><td>1行2列</td><td>1行3列</td>
+      <td> 1 row 1 column </td> <td> 1 row 2 columns </td> <td> 1 row 3 columns </td>
     </tr>
     <tr>
-      <td>2行1列</td><td>2行2列</td><td>2行3列</td>
+      <td> 2 rows and 1 column </td> <td> 2 rows and 2 columns </td> <td> 2 rows and 3 columns </td>
     </tr>
   </table>
 </div>
 <pre>
 &lt;style&gt;
   .waku_collapse table {
-    border-collapse:collapse;
+    border-collapse: collapse;
   }
   .waku_collapse td {
-    border:1px solid #ddd;
+    border: 1px solid #ddd;
   }
 &lt;/style&gt;
 
-&lt;div class="waku_collapse"&gt;
+&lt;div class = "waku_collapse"&gt;
   &lt;table&gt;
     &lt;tr&gt;
-      &lt;td&gt;1行1列&lt;/td&gt;&lt;td&gt;1行2列&lt;/td&gt;&lt;td&gt;1行3列&lt;/td&gt;
+      &lt;td&gt; 1 row 1 column &lt;/td&gt; &lt;td&gt; 1 row 2 columns &lt;/td&gt; &lt;td&gt; 1 row 3 columns &lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;2行1列&lt;/td&gt;&lt;td&gt;2行2列&lt;/td&gt;&lt;td&gt;2行3列&lt;/td&gt;
+      &lt;td&gt; 2 rows and 1 column &lt;/td&gt; &lt;td&gt; 2 rows and 2 columns &lt;/td&gt; &lt;td&gt; 2 rows and 3 columns &lt;/td&gt;
     &lt;/tr&gt;
   &lt;/table&gt;
 &lt;/div&gt;
 </pre>
 <p>
-  よく見るテーブルの枠ができあがりました。
+  The frame of the table that you often see is completed.
 </p>
-<h3>テーブルの項目に適切なパディングを設定する</h3>
+<h3> Set appropriate padding for table items </h3>
 <p>
-  テーブルの項目に適切なパディングを設定してみましょう。少し窮屈ですね。
+  Let's set the appropriate padding for the items in the table. It's a little cramped.
 </p>
 <style>
   .waku_collapse_padding table {
-    border-collapse:collapse;
+    border-collapse: collapse;
   }
   .waku_collapse_padding td {
-    border:1px solid #ddd;
+    border: 1px solid #ddd;
     padding: 12px 20px 10px 20px;
   }
 </style>
-<div class="waku_collapse_padding">
+<div class = "waku_collapse_padding">
   <table>
     <tr>
-      <td>1行1列</td><td>1行2列</td><td>1行3列</td>
+      <td> 1 row 1 column </td> <td> 1 row 2 columns </td> <td> 1 row 3 columns </td>
     </tr>
     <tr>
-      <td>2行1列</td><td>2行2列</td><td>2行3列</td>
+      <td> 2 rows and 1 column </td> <td> 2 rows and 2 columns </td> <td> 2 rows and 3 columns </td>
     </tr>
   </table>
 </div>
 <pre>
 &lt;style&gt;
   .waku_collapse_padding table {
-    border-collapse:collapse;
+    border-collapse: collapse;
   }
   .waku_collapse_padding td {
-    border:1px solid #ddd;
+    border: 1px solid #ddd;
     padding: 12px 20px 10px 20px;
   }
 &lt;/style&gt;
 
-&lt;div class="waku_collapse_padding"&gt;
+&lt;div class = "waku_collapse_padding"&gt;
   &lt;table&gt;
     &lt;tr&gt;
-      &lt;td&gt;1行1列&lt;/td&gt;&lt;td&gt;1行2列&lt;/td&gt;&lt;td&gt;1行3列&lt;/td&gt;
+      &lt;td&gt; 1 row 1 column &lt;/td&gt; &lt;td&gt; 1 row 2 columns &lt;/td&gt; &lt;td&gt; 1 row 3 columns &lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;2行1列&lt;/td&gt;&lt;td&gt;2行2列&lt;/td&gt;&lt;td&gt;2行3列&lt;/td&gt;
+      &lt;td&gt; 2 rows and 1 column &lt;/td&gt; &lt;td&gt; 2 rows and 2 columns &lt;/td&gt; &lt;td&gt; 2 rows and 3 columns &lt;/td&gt;
     &lt;/tr&gt;
   &lt;/table&gt;
 &lt;/div&gt;
 </pre>
-<h3>テーブルの幅を100%にする</h3>
+<h3> Make the table width 100%</h3>
 <p>
-  テーブルの幅を100%にしてみましょう。テーブルはブロック要素と思いきや、ブロック要素ではなく、テーブル要素という特別な要素です。デフォルトの幅は、項目がちょうど収まる幅に自動調整されるようになっています。
+  Let's make the table width 100%. I think a table is a block element, but it is not a block element, but a special element called a table element. The default width is automatically adjusted to fit the item exactly.
 </p>
 <p>
-  テーブルの幅を100%にするにはtableタグのスタイルシート(CSS)に「width:100%;」を指定します。
+  To make the table width 100%, specify "width: 100%;" in the style sheet (CSS) of the table tag.
 </p>
 <style>
   .waku_collapse_padding_100 table {
-    border-collapse:collapse;
-    width:100%;
+    border-collapse: collapse;
+    width: 100%;
   }
   .waku_collapse_padding_100 td {
-    border:1px solid #ddd;
+    border: 1px solid #ddd;
     padding: 12px 20px 10px 20px;
   }
 </style>
-<div class="waku_collapse_padding_100">
+<div class = "waku_collapse_padding_100">
   <table>
     <tr>
-      <td>1行1列</td><td>1行2列</td><td>1行3列</td>
+      <td> 1 row 1 column </td> <td> 1 row 2 columns </td> <td> 1 row 3 columns </td>
     </tr>
     <tr>
-      <td>2行1列</td><td>2行2列</td><td>2行3列</td>
+      <td> 2 rows and 1 column </td> <td> 2 rows and 2 columns </td> <td> 2 rows and 3 columns </td>
     </tr>
   </table>
 </div>
 <pre>
 &lt;style&gt;
   .waku_collapse_padding_100 table {
-    border-collapse:collapse;
-    width:100%;
+    border-collapse: collapse;
+    width: 100%;
   }
   .waku_collapse_padding_100 td {
-    border:1px solid #ddd;
+    border: 1px solid #ddd;
     padding: 12px 20px 10px 20px;
   }
 &lt;/style&gt;
 
-&lt;div class="waku_collapse_padding_100"&gt;
+&lt;div class = "waku_collapse_padding_100"&gt;
   &lt;table&gt;
     &lt;tr&gt;
-      &lt;td&gt;1行1列&lt;/td&gt;&lt;td&gt;1行2列&lt;/td&gt;&lt;td&gt;1行3列&lt;/td&gt;
+      &lt;td&gt; 1 row 1 column &lt;/td&gt; &lt;td&gt; 1 row 2 columns &lt;/td&gt; &lt;td&gt; 1 row 3 columns &lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;2行1列&lt;/td&gt;&lt;td&gt;2行2列&lt;/td&gt;&lt;td&gt;2行3列&lt;/td&gt;
+      &lt;td&gt; 2 rows and 1 column &lt;/td&gt; &lt;td&gt; 2 rows and 2 columns &lt;/td&gt; &lt;td&gt; 2 rows and 3 columns &lt;/td&gt;
     &lt;/tr&gt;
   &lt;/table&gt;
 &lt;/div&gt;
 </pre>
-<h3>見出しを付ける</h3>
+<h3> Add a headline </h3>
 <p>
-  テーブルに見出しを付けてみましょう。見出し用の<a href="/blog/20200311095039.html">thタグ</a>がありますので、これを使うとよいでしょう。
+  Let's add a heading to the table. There is a <a href="/blog/20200311095039.html"> th tag</a> for the headline, so it's a good idea to use it.
 </p>
-<h4>1行目を見出しにする場合</h4>
+<h4> When using the first line as a heading </h4>
 <p>
-  1行目を見出しにしてみましょう。見出し行は、背景色を変えて、太字にしています。thタグは、デフォルトで、テキストが中央よせになります。
+  Let's make the first line the heading. The heading line is bold with a different background color. By default, the th tag has the text centered.
 </p>
 <style>
   .waku_collapse_padding_100_head_1row table {
-    border-collapse:collapse;
-    width:100%;
+    border-collapse: collapse;
+    width: 100%;
   }
   .waku_collapse_padding_100_head_1row td, .waku_collapse_padding_100_head_1row th {
-    border:1px solid #ddd;
+    border: 1px solid #ddd;
     padding: 12px 20px 10px 20px;
   }
   .waku_collapse_padding_100_head_1row th {
-    font-weight:bold;
-    background:#eee;
+    font-weight: bold;
+    background: #eee;
   }
 </style>
-<div class="waku_collapse_padding_100_head_1row">
+<div class = "waku_collapse_padding_100_head_1row">
   <table>
     <tr>
-      <th>1行1列</th><th>1行2列</th><th>1行3列</th>
+      <th> 1 row 1 column </th> <th> 1 row 2 columns </th> <th> 1 row 3 columns </th>
     </tr>
     <tr>
-      <td>2行1列</td><td>2行2列</td><td>2行3列</td>
+      <td> 2 rows and 1 column </td> <td> 2 rows and 2 columns </td> <td> 2 rows and 3 columns </td>
     </tr>
   </table>
 </div>
 <pre>
 &lt;style&gt;
   .waku_collapse_padding_100_head_1row table {
-    border-collapse:collapse;
-    width:100%;
+    border-collapse: collapse;
+    width: 100%;
   }
   .waku_collapse_padding_100_head_1row td, .waku_collapse_padding_100_head_1row th {
-    border:1px solid #ddd;
+    border: 1px solid #ddd;
     padding: 12px 20px 10px 20px;
   }
   .waku_collapse_padding_100_head_1row th {
-    font-weight:bold;
-    background:#eee;
+    font-weight: bold;
+    background: #eee;
   }
 &lt;/style&gt;
 
-&lt;div class="waku_collapse_padding_100_head_1row"&gt;
+&lt;div class = "waku_collapse_padding_100_head_1row"&gt;
   &lt;table&gt;
     &lt;tr&gt;
-      &lt;th&gt;1行1列&lt;/th&gt;&lt;th&gt;1行2列&lt;/th&gt;&lt;th&gt;1行3列&lt;/th&gt;
+      &lt;th&gt; 1 row 1 column &lt;/th&gt; &lt;th&gt; 1 row 2 columns &lt;/th&gt; &lt;th&gt; 1 row 3 columns &lt;/th&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;2行1列&lt;/td&gt;&lt;td&gt;2行2列&lt;/td&gt;&lt;td&gt;2行3列&lt;/td&gt;
+      &lt;td&gt; 2 rows and 1 column &lt;/td&gt; &lt;td&gt; 2 rows and 2 columns &lt;/td&gt; &lt;td&gt; 2 rows and 3 columns &lt;/td&gt;
     &lt;/tr&gt;
   &lt;/table&gt;
 &lt;/div&gt;
 </pre>
-<h4>1列目を見出しにする場合</h4>
+<h4> When using the first column as a heading </h4>
 <p>
-  1列目を見出しにしてみましょう。見出し行は、背景色を変えて、太字にしています。thタグは、デフォルトで、テキストが中央よせになります。
+  Let's make the first column the heading. The heading line is bold with a different background color. By default, the th tag has the text centered.
 </p>
 <style>
   .waku_collapse_padding_100_head_1col table {
-    border-collapse:collapse;
-    width:100%;
+    border-collapse: collapse;
+    width: 100%;
   }
   .waku_collapse_padding_100_head_1col td, .waku_collapse_padding_100_head_1col th {
-    border:1px solid #ddd;
+    border: 1px solid #ddd;
     padding: 12px 20px 10px 20px;
   }
   .waku_collapse_padding_100_head_1col th {
-    font-weight:bold;
-    background:#eee;
+    font-weight: bold;
+    background: #eee;
   }
 </style>
-<div class="waku_collapse_padding_100_head_1col">
+<div class = "waku_collapse_padding_100_head_1col">
   <table>
     <tr>
-      <th>1行1列</th><td>1行2列</td><td>1行3列</td>
+      <th> 1 row 1 column </th> <td> 1 row 2 columns </td> <td> 1 row 3 columns </td>
     </tr>
     <tr>
-      <th>2行1列</th><td>2行2列</td><td>2行3列</td>
+      <th> 2 rows and 1 column </th> <td> 2 rows and 2 columns </td> <td> 2 rows and 3 columns </td>
     </tr>
   </table>
 </div>
 <pre>
 &lt;style&gt;
   .waku_collapse_padding_100_head_1col table {
-    border-collapse:collapse;
-    width:100%;
+    border-collapse: collapse;
+    width: 100%;
   }
   .waku_collapse_padding_100_head_1col td, .waku_collapse_padding_100_head_1col th {
-    border:1px solid #ddd;
+    border: 1px solid #ddd;
     padding: 12px 20px 10px 20px;
   }
   .waku_collapse_padding_100_head_1col th {
-    font-weight:bold;
-    background:#eee;
+    font-weight: bold;
+    background: #eee;
   }
 &lt;/style&gt;
 
-&lt;div class="waku_collapse_padding_100_head_1col"&gt;
+&lt;div class = "waku_collapse_padding_100_head_1col"&gt;
   &lt;table&gt;
     &lt;tr&gt;
-      &lt;th&gt;1行1列&lt;/th&gt;&lt;td&gt;1行2列&lt;/td&gt;&lt;td&gt;1行3列&lt;/td&gt;
+      &lt;th&gt; 1 row 1 column &lt;/th&gt; &lt;td&gt; 1 row 2 columns &lt;/td&gt; &lt;td&gt; 1 row 3 columns &lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;2行1列&lt;/th&gt;&lt;td&gt;2行2列&lt;/td&gt;&lt;td&gt;2行3列&lt;/td&gt;
+      &lt;th&gt; 2 rows and 1 column &lt;/th&gt; &lt;td&gt; 2 rows and 2 columns &lt;/td&gt; &lt;td&gt; 2 rows and 3 columns &lt;/td&gt;
     &lt;/tr&gt;
   &lt;/table&gt;
 &lt;/div&gt;
 </pre>
-<h3>項目の幅を指定する</h3>
+<h3> Specify the width of the item </h3>
 <p>
-  見出し項目は小さな幅で、その他は残りの幅を使いたいという場合がありますね。
+  You may want to use the small width for heading items and the remaining width for others.
 </p>
 <p>
-  たとえば、会社情報を表示する場合を考え見ましょう。
+  For example, consider displaying company information.
 </p>
 <style>
   .corporate table {
-    border-collapse:collapse;
-    width:100%;
+    border-collapse: collapse;
+    width: 100%;
   }
   .corporate td, .corporate th {
-    border-top:1px solid #ddd;
-    border-bottom:1px solid #ddd;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
     padding: 12px 20px 10px 20px;
   }
   .corporate th {
-    font-weight:bold;
-    background:#eee;
-    width:150px;
+    font-weight: bold;
+    background: #eee;
+    width: 150px;
   }
 </style>
-<div class="corporate">
+<div class = "corporate">
   <table>
     <tr>
-      <th>商号</th>
-      <td>Perlクラブ（英語名Perl Club, Ltd.）</td>
+      <th> Trade name </th>
+      <td> Perl Club (English name: Perl Club, Ltd.) </td>
     </tr>
     <tr>
-      <th>代表者</th>
-      <td>代表取締役　木本裕紀(きもと ゆうき)</td>
+      <th> Representative </th>
+      <td> Representative Director Yuki Kimoto </td>
     </tr>
     <tr>
-      <th>本社</th>
+      <th> Headquarters </th>
       <td>
-        〒105-0012<br>
-        東京都港区芝大門一丁目２番２３号 旭ビル３F
+        〒105-0012 <br>
+        1-223 Shibadaimon, Minato-ku, Tokyo Asahi Building 3F
       </td>
     </tr>
     <tr>
-      <th>事業内容</th>
+      <th> Business content </th>
       <td>
-        Web サイトの企画・製作・運用<br>
-        Web システムの企画・設計・開発・運用<br>
-        システム開発・運用に関わるコンサルティング業務<br>
-        社内エンジニアの育成サポート<br>
-        プログラミング教室の企画・運営
+        Website planning, production and operation <br>
+        Web system planning / design / development / operation <br>
+        Consulting work related to system development and operation <br>
+        In-house engineer training support <br>
+        Planning and management of programming classes
       </td>
     </tr>
     <tr>
-      <th>設立</th>
-      <td>令和2年1月14日</td>
+      <th> Establishment </th>
+      <td> January 14, 2nd year of Reiwa </td>
     </tr>
     <tr>
-      <th>資本金</th>
-      <td>1,000,000円</td>
+      <th> Capital </th>
+      <td> 1,000,000 yen </td>
     </tr>
   </table>
 </div>
-<h3>スマートフォンサイトにおけるテーブルを使用する場合の注意</h3>
+<h3> Precautions when using tables on smartphone sites </h3>
 <p>
-  スマートフォンサイトにおけるテーブルを使用する場合の注意です。現在のWebサイトは、スマートフォンからアクセスされることを前提とします。
+  Be careful when using tables on smartphone sites. Current websites are assumed to be accessed from smartphones.
 </p>
 <p>
-  スマートフォンは、横幅は非常に小さいです。テーブルをスマートフォンに表示したときに、項目をどの位置に移動させるか、項目の幅をどのように設定するかということを、考えてデザインする必要があります。
+  The width of smartphones is very small. When the table is displayed on the smartphone, it is necessary to think about where to move the item and how to set the width of the item.
 </p>
 <p>
-  ユーザーが使いやすいインターフェースについて、個別に考える必要があるので、別の記事で、詳しく解説します。
+  We need to think individually about the interface that is easy for users to use, so we will discuss it in detail in another article.
 </p>
 
   </div>
@@ -488,8 +486,7 @@
           <div style="margin-bottom:30px">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
      crossorigin="anonymous"></script>
-<!-- ディスプレイ縦長 -->
-<ins class="adsbygoogle"
+<!-- ディスプレイ縦長 --><ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-4525414114581084"
      data-ad-slot="4544919209"

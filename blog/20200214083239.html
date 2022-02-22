@@ -26,8 +26,7 @@
   });
 </script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-K8JHCY1V18"></script>
+<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-K8JHCY1V18"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -35,8 +34,8 @@
 
   gtag('config', 'G-K8JHCY1V18');
 </script>
-<title>画像の縦位置の調整 - アイコンと文字の縦位置をそろえるテクニック - HTML・CSS Writing 2021 - HTML・CSS Tutorial</title>
-<meta name="description" content="画像の縦位置を調整する方法を解説します。これを理解すると、アイコンと文字をきれいにそろえることができるようになります。">
+<title> Adjusting the vertical position of the image --Technique to align the vertical position of the icon and characters  - HTML・CSS Writing 2021 - HTML・CSS Tutorial</title>
+<meta name="description" content="I will explain how to adjust the vertical position of the image. Once you understand this, you will be able to align the icons and characters neatly.">
   </head>
   <body>
     <div class="container">
@@ -53,12 +52,11 @@
           <div class="entry">
   <div class="top">
     <!-- top -->
-
   </div>
   <div class="middle">
-    <h2><a href="/blog/20200214083239.html">画像の縦位置の調整 - アイコンと文字の縦位置をそろえるテクニック</a></h3>
+    <h2><a href="/blog/20200214083239.html"> Adjusting the vertical position of the image --Technique to align the vertical position of the icon and characters </a></h3>
 <p>
-  画像の縦位置を調整する方法を解説します。これを理解すると、アイコンと文字をきれいにそろえることができるようになります。
+  I will explain how to adjust the vertical position of the image. Once you understand this, you will be able to align the icons and characters neatly.
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -78,93 +76,93 @@
 
 <style>
   img {
-    -ms-interpolation-mode : nearest-neighbor;
+    -ms-interpolation-mode: nearest-neighbor;
   }
 </style>
-<h3>画像の縦位置のデフォルト</h3>
+<h3> Default image vertical position </h3>
 <p>
-  まず最初に画像の縦位置のデフォルトを理解しておきましょう。
+  First of all, let's understand the default of the vertical position of the image.
 </p>
-<div style="background:#eef">
-  <img src="/images/image-vertical/example.png" width="80"> テキスト
+<div style = "background: #eef">
+  <img src = "/ images / image-vertical / example.png" width = "80"> Text
 </div>
 <pre>
-&lt;div style="background:#eef"&gt;
-  &lt;img src="/images/image-vertical/example.png" width="80"&gt; テキスト
+&lt;div style = "background: #eef"&gt;
+  &lt;img src = "/ images / image-vertical / example.png" width = "80"&gt; Text
 &lt;/div&gt;
 </pre>
 <p>
-  目を凝らして、よく見てほしいのは、下の部分が空いていることです。よくみてくださいね。下側が空いていますね。
+  What I would like you to take a closer look at is that the lower part is empty. Please take a closer look. The lower side is vacant.
 </p>
 <p>
-  上は、ぴったりと、外側のdivに張り付いています。
+  The top is snugly stuck to the outer div.
 </p>
 <p>
-  HTMLにおいて、画像は、ベースラインと呼ばれる位置から上に向かって描画されます。下側が空いているのは、このためです。
+  In HTML, images are drawn upwards from a position called the baseline. This is why the lower side is empty.
 </p>
 <p>
-  上側のスペースは、自動的に計算されます。この画像よりも高さの高い、他の画像やテキストがあった場合や、高さが設定されている場合は、上側のスペースが0になるとは限らないです。
+  The upper space is calculated automatically. If there is another image or text that is taller than this image, or if the height is set, the space above it will not necessarily be zero.
 </p>
-<div style="background:#eef">
-  <img src="/images/image-vertical/example.png" width="80"> <img src="/images/image-vertical/example.png" width="120"> テキスト
+<div style = "background: #eef">
+  <img src = "/ images / image-vertical / example.png" width = "80"> <img src = "/ images / image-vertical / example.png" width = "120"> Text
 </div>
 <pre>
-&lt;div style="background:#eef"&gt;
-  &lt;img src="/images/image-vertical/example.png" width="80"&gt; &lt;img src="/images/image-vertical/example.png" width="120"&gt; テキスト
+&lt;div style = "background: #eef"&gt;
+  &lt;img src = "/ images / image-vertical / example.png" width = "80"&gt; &lt;img src = "/ images / image-vertical / example.png" width = "120"&gt; Text
 &lt;/div&gt;
 </pre>
 <p>
-  まず画像の縦位置のデフォルトをよく覚えてください。ベースラインから上に向かって描画され、上側のスペースは自動計算され、自分より高い他の要素がない場合は、0になります。
+  First, remember the default vertical position of the image. It is drawn upwards from the baseline, the space above it is calculated automatically and will be 0 if there are no other elements higher than you.
 </p>
-<h3>画像しかない場合に下のスペースを消す</h3>
+<h3> Erase the space below when there is only an image </h3>
 <p>
-  画像しかない場合に下のスペースを消す一番簡単な方法は、ベースラインを中央にすることです。ベースラインを中央にするには「vertical-align:middle;」を使います。
+  The easiest way to get rid of the space below if you only have an image is to center the baseline. Use "vertical-align: middle;" to center the baseline.
 </p>
-<div style="background:#eef">
-  <img src="/images/image-vertical/example.png" width="80" style="vertical-align:middle;">
+<div style = "background: #eef">
+  <img src = "/ images / image-vertical / example.png" width = "80" style = "vertical-align: middle;">
 </div>
 <pre>
-&lt;div style="background:#eef"&gt;
-  &lt;img src="/images/image-vertical/example.png" width="80" style="vertical-align:middle;"&gt;
+&lt;div style = "background: #eef"&gt;
+  &lt;img src = "/ images / image-vertical / example.png" width = "80" style = "vertical-align: middle;"&gt;
 &lt;/div&gt;
 </pre>
 <p>
-  会社やサービスのロゴなど、それしか画像がないという場合に便利です。
+  This is useful when you only have an image, such as a company or service logo.
 </p>
 <p>
-  テキストが同時に存在している場合は、どうなるでしょうか。見ておきましょう。
+  What if the text is present at the same time? Let's take a look.
 </p>
-<div style="background:#eef">
-  <img src="/images/image-vertical/example.png" width="80" style="vertical-align:middle;"> テキスト
+<div style = "background: #eef">
+  <img src = "/ images / image-vertical / example.png" width = "80" style = "vertical-align: middle;"> Text
 </div>
 <pre>
-&lt;div style="background:#eef"&gt;
-  &lt;img src="/images/image-vertical/example.png" width="80" style="vertical-align:middle;"&gt; テキスト
+&lt;div style = "background: #eef"&gt;
+  &lt;img src = "/ images / image-vertical / example.png" width = "80" style = "vertical-align: middle;"&gt; Text
 &lt;/div&gt;
 </pre>
 <p>
-  んー、よく目を凝らしてください。ビミョーに、テキストの縦位置が、画像の縦位置とずれていませんか? 見えますか。じっと見てください。
+  Hmmm, please keep an eye on it. Does the vertical position of the text deviate from the vertical position of the image in Bimyo? Can you see it? Please take a closer look.
 </p>
 <p>
-  文字の縦位置の真ん中を見つめてください。そして、そのまま視線を右側に移動。「テキスト」の中央位置とは、わずかにずれていますね。
+  Look in the middle of the vertical position of the letters. Then, move your line of sight to the right. It is slightly off the center position of the "text".
 </p>
-<h3>アイコンとテキストの縦位置をそろえる</h3>
+<h3> Align the vertical position of the icon and text </h3>
 <p>
-  アイコンとテキストの縦位置をそろえましょう。テキストのフォントの種類によって、ベースライン位置が微妙にずれるかもしれないのは、仕方ないですが、なるべく真ん中に調整してみます。
+  Align the vertical position of the icon and text. It is unavoidable that the baseline position may shift slightly depending on the type of text font, but try adjusting it to the center as much as possible.
 </p>
 <p>
-  縦位置を指定するには「vertical-align:ピクセル数;」を使います。画像サイズは、アイコンサイズにしてみますね。
+  Use "vertical-align: number of pixels;" to specify the vertical position. Let's set the image size to the icon size.
 </p>
-<div style="background:#eef">
-  <img src="/images/image-vertical/example.png" width="60" style="vertical-align:-23px;"> テキスト
+<div style = "background: #eef">
+  <img src = "/ images / image-vertical / example.png" width = "60" style = "vertical-align: -23px;"> Text
 </div>
 <pre>
-&lt;div style="background:#eef"&gt;
-  &lt;img src="/images/image-vertical/example.png" width="60" style="vertical-align:-23px;"&gt; テキスト
+&lt;div style = "background: #eef"&gt;
+  &lt;img src = "/ images / image-vertical / example.png" width = "60" style = "vertical-align: -23px;"&gt; Text
 &lt;/div&gt;
 </pre>
 <p>
-  vertical-alignにマイナスのピクセル数を設定するのがポイントです。画像の描画位置を、ベースラインよりも下側からにします。
+  The point is to set the number of negative pixels to vertical-align. Set the drawing position of the image from below the baseline.
 </p>
 
   </div>
@@ -192,8 +190,7 @@
           <div style="margin-bottom:30px">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
      crossorigin="anonymous"></script>
-<!-- ディスプレイ縦長 -->
-<ins class="adsbygoogle"
+<!-- ディスプレイ縦長 --><ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-4525414114581084"
      data-ad-slot="4544919209"

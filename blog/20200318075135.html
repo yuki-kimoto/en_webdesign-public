@@ -26,8 +26,7 @@
   });
 </script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-K8JHCY1V18"></script>
+<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-K8JHCY1V18"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -35,8 +34,8 @@
 
   gtag('config', 'G-K8JHCY1V18');
 </script>
-<title>【HTML5】パスワードフィールド - パスワード入力のフォーム部品 - HTML・CSS Writing 2021 - HTML・CSS Tutorial</title>
-<meta name="description" content="パスワードフィールドは、パスワードを入力するためのフォーム部品です。inputタグで「type="password"」を指定します。テキストフィールドと異なり、入力した文字が見えません。">
+<title> [HTML5] Password field --Password input form part  - HTML・CSS Writing 2021 - HTML・CSS Tutorial</title>
+<meta name="description" content="The password field is a form part for entering a password. Specify "type =" password "" in the input tag. Unlike  text field, I can't see the characters I typed.">
   </head>
   <body>
     <div class="container">
@@ -53,12 +52,11 @@
           <div class="entry">
   <div class="top">
     <!-- top -->
-
   </div>
   <div class="middle">
-    <h2><a href="/blog/20200318075135.html">【HTML5】パスワードフィールド - パスワード入力のフォーム部品</a></h2>
+    <h2><a href="/blog/20200318075135.html"> [HTML5] Password field --Password input form part </a></h2>
 <p>
-  パスワードフィールドは、パスワードを入力するためのフォーム部品です。inputタグで「type="password"」を指定します。<a href="/blog/20200317081313.html">テキストフィールド</a>と異なり、入力した文字が見えません。
+  The password field is a form part for entering a password. Specify "type =" password "" in the input tag. Unlike <a href="/blog/20200317081313.html"> text field</a>, I can't see the characters I typed.
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -77,152 +75,152 @@
 
 
 <p>
-  <input type="password" name="password">
+  <input type = "password" name = "password">
 </p>
 <pre>
-&lt;input type="password" name="password"&gt;
+&lt;input type = "password" name = "password"&gt;
 </pre>
 <p>
-  パスワードを入力することができます。フォーム部品なので、name属性で、名前を付けておくことが一般的です。
+  You can enter the password. Since it is a form part, it is common to give it a name with the name attribute.
 </p>
-<h3>パスワードフィールドは、インラインブロック要素</h3>
+<h3> Password field is an inline block element </h3>
 <p>
-  パスワードフィールドは、デフォルトで、インラインブロック要素です。インラインブロック要素なので、左側に流れ、高さや幅を設定することができます。
+  Password fields are inline block elements by default. Since it is an inline block element, it flows to the left and you can set the height and width.
 </p>
 <div>
-  <input type="password" name="password" style="width:100px;height:50px;">
+  <input type = "password" name = "password" style = "width: 100px; height: 50px;">
 </div>
 <pre>
-&lt;input type="password" name="password" style="width:100px;height:50px;"&gt;
+&lt;input type = "password" name = "password" style = "width: 100px; height: 50px;"&gt;
 </pre>
-<h3>パスワードフィールドに、フォントサイズ、パディングを設定する</h3>
+<h3> Set the font size and padding in the password field </h3>
 <p>
-  デフォルトのパスワードフィールドは、スマートフォンをメインに考えると、少し小さいです。パスワードフィールドに、適切なパディングを設定してみましょう。
+  The default password field is a bit small, especially for smartphones. Let's set the appropriate padding in the password field.
 </p>
 <p>
-  <input type="password" name="password" style="padding:11px 5px 9px 5px;font-size:16px;">
+  <input type = "password" name = "password" style = "padding: 11px 5px 9px 5px; font-size: 16px;">
 </p>
 <pre>
-&lt;input type="password" name="password" style="padding:12px 5px 10px 5px;"&gt;
+&lt;input type = "password" name = "password" style = "padding: 12px 5px 10px 5px;"&gt;
 </pre>
-<h3>iphone/safari対応するために、パスワードフィールドのフォントサイズは、16px以上に</h3>
+<h3> To support iphone / safari, the font size of the password field should be 16px or more </h3>
 <p>
-  iphone/safari対応するために、パスワードフィールドのフォントサイズは、16px以上にしましょう。<a href="/blog/20200309145137.html">iphone/safariでフォーム入力時の自動拡大機能をoff</a>にするためのです。
+  In order to support iphone / safari, the font size of the password field should be 16px or more. <a href="/blog/20200309145137.html"> This is to turn off the automatic enlargement function when filling out a form on iphone / safari</a>.
 </p>
-<h3>iphone/safariで、フォーム部品にデフォルトのデザインが適用されるのを防ぐ</h3>
+<h3> Prevent the default design from being applied to form parts on iphone / safari </h3>
 <p>
-  iphone/safariで、フォーム部品にデフォルトのデザインが適用されるのを防ぐには、「-webkit-appearance:none;」を指定します。<a href="/blog/20200228082258.html">iphone/safariで、テキストフィールドやボタンのデフォルトデザインが適用されてしまうのを解決</a>を参考にしてください。
+  In iphone / safari, specify "-webkit-appearance: none;" to prevent the default design from being applied to form parts. Please refer to <a href="/blog/20200228082258.html"> Resolved the default design of text fields and buttons applied in iphone / safari</a>.
 </p>
-<h3>パスワードフィールドのラベルをクリックしたときに、フォーカスが当たるようにする</h3>
+<h3> Make sure the focus is on when you click the label in the password field </h3>
 <p>
-  パスワードフィールドだけではなく、項目見出しをクリックしたときに、フォーカスが当たるようにするにはlabelタグを使います。inputタグの中のid属性で指定した名前をlabelタグのfor属性に指定します。
+  Use the label tag to get focus when you click on an item heading, not just the password field. Specify the name specified in the id attribute in the input tag in the for attribute of the label tag.
 </p>
 <p>
-  <label for="password">パスワード:</label> <input type="password" name="password" id="password">
+  <label for = "password"> Password: </label> <input type = "password" name = "password" id = "password">
 </p>
 <pre>
-&lt;label for="password"&gt;パスワード:&lt;/label&gt; &lt;input type="password" name="password" id="password"&gt;
+&lt;label for = "password"&gt; Password: &lt;/label&gt; &lt;input type = "password" name = "password" id = "password"&gt;
 </pre>
 <p>
-  パスワードというラベルをクリックしてみてください。パスワードフィールドに、フォーカスが当たります。
+  Try clicking on the label labeled Password. The password field is in focus.
 </p>
-<h3>フォーム送信時に、jQueryでフォームのパスワードフィールドの値を取得する</h3>
+<h3> Get the value of the form password field with jQuery when submitting the form </h3>
 <p>
-  送信ボタンを押したタイミングで、パスワードフィールドの値を取得する<a href="/blog/20200219091414.html">jQuery</a>を使ったサンプルです。ajaxでPOSTリクエストを送信するときに、よく使います。取得した内容を、alertで表示しています。
+  This is a sample using <a href="/blog/20200219091414.html"> jQuery</a> to get the value of the password field when the submit button is pressed. It is often used when sending a POST request with ajax. The acquired contents are displayed by alert.
 </p>
-<h4>フォームのすべての値を取得する方法</h4>
+<h4> How to get all the values ​​in a form </h4>
 <p>
-  フォームのすべての値を取得する方法です。
+  How to get all the values ​​in a form.
 </p>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src = "https://code.jquery.com/jquery-3.4.1.min.js"> </script>
 <script>
   $(function () {
-    $(document).on('click', '.form-text-field-all .submit_button', function () {
+    $(document) .on ('click','.form-text-field-all .submit_button', function () {
       
-      /* フォームのすべての値を取得する方法 */
-      var data = $(this).closest('form').serialize();
+      / * How to get all the values ​​in a form * /
+      var data = $(this) .closest ('form') .serialize ();
       
-      alert(data);
+      alert (data);
     });
   });
 </script>
-<div class="form-text-field-all">
+<div class = "form-text-field-all">
   <form>
     <div>
-      パスワード: <input type="password" name="password">
+      Password: <input type = "password" name = "password">
     </div>
-    <button type="button" class="submit_button">送信</button>
+    <button type = "button" class = "submit_button"> Submit </button>
   </form>
 </div>
 <pre>
-&lt;script src="https://code.jquery.com/jquery-3.4.1.min.js"&gt;&lt;/script&gt;
+&lt;script src = "https://code.jquery.com/jquery-3.4.1.min.js"&gt; &lt;/script&gt;
 &lt;script&gt;
   $(function () {
-    $(document).on('click', '.form-text-field-all .submit_button', function () {
+    $(document) .on ('click','.form-text-field-all .submit_button', function () {
       
-      /* フォームのすべての値を取得する方法 */
-      var data = $(this).closest('form').serialize();
+      / * How to get all the values ​​in a form * /
+      var data = $(this) .closest ('form') .serialize ();
       
-      alert(data);
+      alert (data);
     });
   });
 &lt;/script&gt;
 
-&lt;div class="form-text-field-all"&gt;
+&lt;div class = "form-text-field-all"&gt;
   &lt;form&gt;
     &lt;div&gt;
-      パスワード: &lt;input type="password" name="password"&gt;
+      Password: &lt;input type = "password" name = "password"&gt;
     &lt;/div&gt;
-    &lt;button type="button" class="submit_button"&gt;送信&lt;/button&gt;
+    &lt;button type = "button" class = "submit_button"&gt; Submit &lt;/button&gt;
   &lt;/form&gt;
 &lt;/div&gt;
 </pre>
 <p>
-  on('click')をdocumentから始めているのは、動的なHTMLの書き換えに対応するためです。ドキュメントトップからたどると、HTMLの部分が動的に書き換えられた場合も、正しく動作します。buttonに「type="button"」を指定しておくと、<a href="/blog/20200313095039.html">フォームのボタンのサブミットの動作がなくなくす</a>ことができます。
+  The reason for starting on ('click') from document is to support dynamic HTML rewriting. If you follow from the top of the document, it will work correctly even if the HTML part is dynamically rewritten. If you specify "type =" button "" for button, you can <a href="/blog/20200313095039.html"> eliminate the behavior of submitting the button of the form</a>.
 </p>
-<h4>個別のパスワードフィールドの値を取得する方法</h4>
+<h4> How to get the value of an individual password field </h4>
 <p>
-  個別のパスワードフィールドの値を取得する方法です。パスワードだけを取得しています。
+  How to get the value of an individual password field. I only get the password.
 </p>
 <script>
   $(function () {
-    $(document).on('click', '.form-text-field-part .submit_button', function () {
+    $(document) .on ('click','.form-text-field-part .submit_button', function () {
       
-      /* パスワードを取得 */
-      var password = $(this).closest('form').find('[name=password]').val();
+      / * Get password * /
+      var password = $(this) .closest ('form'). find ('[name = password]'). val ();
       
-      alert(password);
+      alert (password);
     });
   });
 </script>
-<div class="form-text-field-part">
+<div class = "form-text-field-part">
   <form>
     <div>
-      パスワード: <input type="password" name="password">
+      Password: <input type = "password" name = "password">
     </div>
-    <button type="button" class="submit_button">送信</button>
+    <button type = "button" class = "submit_button"> Submit </button>
   </form>
 </div>
 <pre>
-&lt;script src="https://code.jquery.com/jquery-3.4.1.min.js"&gt;&lt;/script&gt;
+&lt;script src = "https://code.jquery.com/jquery-3.4.1.min.js"&gt; &lt;/script&gt;
 &lt;script&gt;
   $(function () {
-    $(document).on('click', '.form-text-field-part .submit_button', function () {
+    $(document) .on ('click','.form-text-field-part .submit_button', function () {
       
-      /* パスワードを取得 */
-      var password = $(this).closest('form').find('[name=password]').val();
+      / * Get password * /
+      var password = $(this) .closest ('form'). find ('[name = password]'). val ();
       
-      alert(password);
+      alert (password);
     });
   });
 &lt;/script&gt;
 
-&lt;div class="form-text-field-part"&gt;
+&lt;div class = "form-text-field-part"&gt;
   &lt;form&gt;
     &lt;div&gt;
-      パスワード: &lt;input type="password" name="password"&gt;
+      Password: &lt;input type = "password" name = "password"&gt;
     &lt;/div&gt;
-    &lt;button type="button" class="submit_button"&gt;送信&lt;/button&gt;
+    &lt;button type = "button" class = "submit_button"&gt; Submit &lt;/button&gt;
   &lt;/form&gt;
 &lt;/div&gt;
 </pre>
@@ -252,8 +250,7 @@
           <div style="margin-bottom:30px">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
      crossorigin="anonymous"></script>
-<!-- ディスプレイ縦長 -->
-<ins class="adsbygoogle"
+<!-- ディスプレイ縦長 --><ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-4525414114581084"
      data-ad-slot="4544919209"

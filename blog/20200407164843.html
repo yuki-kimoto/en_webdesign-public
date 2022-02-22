@@ -26,8 +26,7 @@
   });
 </script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-K8JHCY1V18"></script>
+<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-K8JHCY1V18"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -35,8 +34,8 @@
 
   gtag('config', 'G-K8JHCY1V18');
 </script>
-<title>border-radius - ボーダーの角を丸くする - CSS入門【CSS3対応】 - HTML・CSS Writing 2021 - HTML・CSS Tutorial</title>
-<meta name="description" content="ボーダーの角を丸くするにはborder-radiusをスタイルシート(CSS)で設定します。設定するサイズは角丸の半径です。">
+<title> border-radius --Round the corners of the border --Introduction to CSS [CSS3 compatible]  - HTML・CSS Writing 2021 - HTML・CSS Tutorial</title>
+<meta name="description" content="To round the corners of the border, set  border-radius  in the stylesheet (CSS). The size to set is the radius of the rounded corners.">
   </head>
   <body>
     <div class="container">
@@ -53,31 +52,30 @@
           <div class="entry">
   <div class="top">
     <!-- top -->
-
   </div>
   <div class="middle">
-    <div class="bread">
-  <ul itemscope itemtype="http://schema.org/BreadcrumbList">
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <div class = "bread">
+  <ul itemscope itemtype = "http://schema.org/BreadcrumbList">
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/">
-        <span itemprop="name">Webデザイン</span>
-      </a>
-      <meta itemprop="position" content="1" />
+        <span itemprop = "name"> Web design </span>
+     </a>
+      <meta itemprop = "position" content = "1" />
     </li>
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/blog/20200427085612.html">
-        <span itemprop="name">CSS</span>
-      </a>
-      <meta itemprop="position" content="2" />
+        <span itemprop = "name"> CSS </span>
+     </a>
+      <meta itemprop = "position" content = "2" />
     </li>
     <li>
       here
     </li>
   </ul>
 </div>
-<h2><a href="/blog/20200407164843.html">border-radius - ボーダーの角を丸くする - CSS入門【CSS3対応】</a></h2>
+<h2><a href="/blog/20200407164843.html"> border-radius --Round the corners of the border --Introduction to CSS [CSS3 compatible] </a></h2>
 <p>
-  ボーダーの角を丸くするには<b>border-radius</b>をスタイルシート(CSS)で設定します。設定するサイズは角丸の半径です。
+  To round the corners of the border, set <b> border-radius </b> in the stylesheet (CSS). The size to set is the radius of the rounded corners.
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -95,64 +93,64 @@
 </div>
 
 
-<div style="border-radius:10px;border:1px solid #ddd;">
-  角丸のボーダー
+<div style = "border-radius: 10px; border: 1px solid #ddd;">
+  Rounded border
 </div>
 <pre>
-&lt;div style="border-radius:10px;border:1px solid #ddd;"&gt;
-  角丸のボーダー
+&lt;div style = "border-radius: 10px; border: 1px solid #ddd;"&gt;
+  Rounded border
 &lt;/div&gt;
 </pre>
-<h3>角を丸くする効果</h3>
+<h3> Effect of rounding corners </h3>
 <p>
-  角を丸くすることで、柔らかさを表現することができます。コンテンツを囲む場合や、ボタンを作成するときに、活用できます。
+  You can express softness by rounding the corners. You can use it to enclose content or create buttons.
 </p>
-<h3>左上、右上、右下、左下のそれぞれの位置に角丸を設定する</h3>
+<h3> Set rounded corners at the upper left, upper right, lower right, and lower left positions </h3>
 <p>
-  border-radiusを使って、左上、右上、右下、左下のそれぞれの位置に角丸を設定することもできます。指定順は、左上、右上、右下、左下の順です。
+  You can also use border-radius to set rounded corners at the top left, top right, bottom right, and bottom left positions. The order of designation is upper left, upper right, lower right, lower left.
 </p>
-<div style="border-radius:10px 10px 10px 10px;border:1px solid #ddd;">
-  角丸のボーダー 四隅指定
+<div style = "border-radius: 10px 10px 10px 10px; border: 1px solid #ddd;">
+  Border with rounded corners Designated at four corners
 </div>
 <pre>
-&lt;div style="border-radius:10px 10px 10px 10px;border:1px solid #ddd;"&gt;
-  角丸のボーダー 四隅指定
+&lt;div style = "border-radius: 10px 10px 10px 10px; border: 1px solid #ddd;"&gt;
+  Border with rounded corners Designated at four corners
 &lt;/div&gt;
 </pre>
-<h4>上側だけに角丸を設定する</h4>
+<h4> Set rounded corners only on the upper side </h4>
 <p>
-  上側だけに角丸を設定してみましょう。
+  Let's set rounded corners only on the upper side.
 </p>
-<div style="border-radius:10px 10px 0 0;border:1px solid #ddd;">
-  上側だけに角丸
+<div style = "border-radius: 10px 10px 0 0; border: 1px solid #ddd;">
+  Rounded corners only on the upper side
 </div>
 <pre>
-&lt;div style="border-radius:10px 10px 0 0;border:1px solid #ddd;"&gt;
-  上側だけに角丸
+&lt;div style = "border-radius: 10px 10px 0 0; border: 1px solid #ddd;"&gt;
+  Rounded corners only on the upper side
 &lt;/div&gt;
 </pre>
-<h4>下側だけに角丸を設定する</h4>
+<h4> Set rounded corners only on the bottom side </h4>
 <p>
-  下側だけに角丸を設定してみましょう。
+  Let's set rounded corners only on the bottom side.
 </p>
-<div style="border-radius:0 0 10px 10px;border:1px solid #ddd;">
-  下側だけに角丸
+<div style = "border-radius: 0 0 10px 10px; border: 1px solid #ddd;">
+  Rounded corners only on the bottom
 </div>
 <pre>
-&lt;div style="border-radius:0 0 10px 10px;border:1px solid #ddd;"&gt;
-  下側だけに角丸
+&lt;div style = "border-radius: 0 0 10px 10px; border: 1px solid #ddd;"&gt;
+  Rounded corners only on the bottom
 &lt;/div&gt;
 </pre>
-<h3>border-radiusはボーダーがない場合でも適用される</h3>
+<h3> border-radius applies even if there is no border </h3>
 <p>
-  border-radiusは、ボーダーという名前が含まれていますが、ボーダーがない場合でも適用されます。背景色を設定してborder-radiusを指定してみましょう。
+  border-radius contains the name border, but it applies even if there is no border. Let's set the background color and specify border-radius.
 </p>
-<div style="border-radius:10px;background:#eef">
-  ボーダーがない場合でも適用
+<div style = "border-radius: 10px; background: #eef">
+  Applies even if there is no border
 </div>
 <pre>
-&lt;div style="border-radius:10px;background:#eef"&gt;
-  ボーダーがない場合でも適用
+&lt;div style = "border-radius: 10px; background: #eef"&gt;
+  Applies even if there is no border
 &lt;/div&gt;
 </pre>
 
@@ -181,8 +179,7 @@
           <div style="margin-bottom:30px">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
      crossorigin="anonymous"></script>
-<!-- ディスプレイ縦長 -->
-<ins class="adsbygoogle"
+<!-- ディスプレイ縦長 --><ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-4525414114581084"
      data-ad-slot="4544919209"
